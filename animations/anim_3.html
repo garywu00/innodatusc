@@ -1,0 +1,77 @@
+<html>
+    
+    <head>
+        
+        <style>
+        #ball {
+  width: 180px;
+  height: 180px;
+  background-color: lightgreen;
+  animation: bounce 0.4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+            border-radius: 200px;
+}
+        #ball2 {
+  width: 180px;
+  height:180px;
+  background-color: red;
+  animation: bounce2 0.4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+            border-radius: 200px;
+            text-align: center;
+}
+
+p {text-align: center; 
+  padding: 30%;
+  animation: Text 5s infinite;
+    font-size: 3em;
+    
+}
+
+@keyframes Text
+{
+  0% {color: yellow;}
+  100% {color: maroon;}
+}
+
+@keyframes bounce
+{
+  0% {
+    transform: translate3d(0,30px,0);
+    background-color: lightgreen;
+  }
+  100% {
+    transform: translate3d(70px,30px,0);
+    background-color: coral;
+    }
+            }
+    
+    @keyframes bounce2
+{
+  0% {
+    transform: translate3d(0,60px,0);
+    background-color: lightblue;
+  }
+  100% {
+    transform: translate3d(70px,14px,0);
+    background-color: lightgoldenrodyellow;
+    }
+    }
+        </style>
+    
+    </head>
+    
+    <body>
+        
+        <div id=ball>
+        <p>OW</p>
+        </div>
+    
+         <div id=ball2>
+        <p>OW</p>
+        </div>
+        
+    </body>
+</html>

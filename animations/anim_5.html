@@ -1,0 +1,72 @@
+<html>
+    
+    <head>
+        
+        <style>
+        #ball {
+  animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+            position: relative;
+}
+            img {
+                width: 200px;
+            }
+            #blue {
+               text-align: center;
+            }
+            #knife {
+                width: 100px;
+                transform: rotate(180deg);
+                position: relative;
+                right: 180px;
+                bottom: 80px;
+            }
+
+p {text-align: center; 
+  padding-top: 25px;
+  animation: Text 5s infinite;
+}
+
+@keyframes Text
+{
+  0% {color: yellow;}
+  100% {color: maroon;}
+}
+
+@keyframes bounce
+{
+  0% {
+    transform: translate3d(0,0,0);
+  }
+  20% {
+    transform: translate3d(20%,40%,0);
+  }
+  40% {
+    transform: translate3d(40%,60%,10%);
+  }
+  60% {
+    transform: translate3d(70%,90%,30%);
+  }
+  80% {
+    transform: translate3d(40%,80%,90%);
+  }
+  100% 
+  {
+    transform: translate3d(0,10%,0);
+  }
+  
+}
+        </style>
+    
+    </head>
+    
+    <body>
+    <div id=ball><img src="https://discourse.disneyheroesgame.com/uploads/default/original/3X/c/2/c23f54aea2065f106e4dbb8218d0ce2d7853351c.png"> 
+        <img id=knife src="https://lh3.googleusercontent.com/proxy/ZAIYmJgzMCz9HyyoBeSn3LO4a3MSL0OVgU-I95M9HtPu1Vim3XUGuUZHbDtNgMLPmqGHXnSigZsSs9hhsC9D7nCudOsDhooDY94liq5ZEN_l8DCqsntg4jDwvbPK2qrGxXJwTg">
+</div>
+       
+    <div id=blue><img src="https://vignette.wikia.nocookie.net/among-us-wiki/images/a/ab/Cyan.png/revision/latest/scale-to-width-down/340?cb=20200516162803"> 
+</div>
+    </body>
+</html>
