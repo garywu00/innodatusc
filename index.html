@@ -2,86 +2,375 @@
     <head>
 
         <style>
+body{
+position: relative;
+height: 4447px;
+margin: 0px;
 
-            img {
-                width: 300px;
-                padding-top: 50px;
-            }
-            .box1 {
-                float: left;
-                position: relative;
-                width: 400px;
-            }
-            body {
-                align-content: center;
-                width: 800px;
-                text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-                height: 1000px;
-            }
+margin-left: auto;
+margin-right: auto;
+padding-left: auto;
+padding-right: auto;
+background: #FFFFFF;
+}
+
+#hero{
+  background: linear-gradient(180deg, #FFFDF8 0%, #FEF6F4 100%);
+  width: 100%;
+  height: 850px;
+  left: 0px;
+  top: 0px;
+}
+h1 {
+  position: absolute;
+  width: 787px;
+  height: 78px;
+  left: 216px;
+  top: 238px;
+
+  /* H1 */
+
+  font-family: Futura;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 78px;
+  /* identical to box height, or 108% */
+
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  /* Text */
+
+  color: #292929;
+}
+
+p {
+  position: absolute;
+  width: 634px;
+  height: 81px;
+  left: 293px;
+  top: 374px;
+
+  /* Body */
+
+  font-family: futura;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  text-align: center;
+
+  /* Copy */
+
+  color: #4A4A4A;
+}
+#red {
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 15px 80px;
+
+position: absolute;
+width: 240px;
+height: 66px;
+left: 333px;
+top: 499px;
+
+font-family: Futura;
+font-style: normal;
+font-weight: 100;
+font-size: 23px;
+line-height: 36px;
+/* identical to box height, or 157% */
+
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 0px;
+
+background: linear-gradient(90deg, #FF5662 0%, #FF7E7E 79.06%);
+border-radius: 10px;
+}
+
+#red-stroke {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 44px;
+
+  position: absolute;
+  width: 242px;
+  height: 66px;
+  left: 590px;
+  top: 489px;
+
+  border-radius: 10px;
+  font-family: Futura;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 36px;
+  /* identical to box height, or 157% */
+
+  text-align: center;
+
+  color: #FF5662;
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 10px 0px;
+
+  background-color: rgba(12, 23, 23, 0);
+  border-color: linear-gradient(90deg, #FF5662 0%, #FF7E7E 79.06%);
+  border-style: solid;
+}
+input, button, submit { border:none; }
+
+#logo {
+  position: absolute;
+width: 79px;
+height: 79px;
+left: 88px;
+top: 54px;
+
+background: url(Innod at USC Logo-01.png);
+}
+#navbar {
+  position: fixed;
+  z-index: 2;
+  background-color: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 26.23%);
+}
+.navlink {
+
+font-family: Futura;
+font-style: normal;
+font-weight: 500;
+font-size: 23px;
+line-height: 36px;
+
+color: #4A4A4A;
+}
+
+#nav-events {
+  position: absolute;
+width: 66px;
+height: 36px;
+left: 551px;
+top: 75px;
+}
+#nav-ourteam {
+position: absolute;
+width: 104px;
+height: 36px;
+left: 392px;
+top: 75px;
+}
+#nav-ourwork {
+  position: absolute;
+width: 106px;
+height: 36px;
+left: 671px;
+top: 75px;
+}
+#nav-button {
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 15px 30px;
+
+position: absolute;
+width: 240px;
+height: 48px;
+left: 935px;
+top: 62px;
+
+background: linear-gradient(90deg, #FF5662 0%, #FF7E7E 79.06%);
+border-radius: 10px;
+font-family: Futura;
+font-style: normal;
+font-weight: 500;
+font-size: 23px;
+line-height: 36px;
+/* identical to box height, or 157% */
+
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 10px 0px;
+}
+
+#section-2 {
+
+width: 100%;
+height: 600px;
+padding-top: 100px;
+padding-left: 50px;
+padding-right: 50px;
+background: #1C1818;
+}
+
+h2 {
+  /* H2 */
+
+font-family: Futura;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 34px;
+/* identical to box height, or 96% */
+
+
+/* Design System / Background */
+
+color: #FBFAF8;
+}
+#p-white {
+
+/* Body */
+width: 400px;
+font-family: Futura;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 150%;
+/* or 27px */
+
+color: #FFFFFF;
+}
+
+#see-our-work {
+  align-items: center;
+  padding: 10px 40px;
+
+  border-radius: 10px;
+  font-family: Futura;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 157% */
+
+  text-align: center;
+
+  color: #FF5662;
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  background-color: rgba(12, 23, 23, 0);
+  border-color: linear-gradient(90deg, #FF5662 0%, #FF7E7E 79.06%);
+  border-style: solid;
+}
+
+/* unvisited link */
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF5662;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: #FF5669;
+  text-decoration: none;
+}
+
+
         </style>
 
     </head>
-    <body style="background-color: whitesmoke; text-align: left; color: black; font-family: arial; padding: 50px; ">
+    <body>
 
-        <img src="https://media1.tenor.com/images/79a8b122c044254e79f22ec175e4874a/tenor.gif?itemid=15571439">
-
-        <h1 style="font-size: 4em; padding-top: 20px;">Hello World!</h1>
-        <h2>Gary Wu</h2>
-        <p>garywu@usc.edu</p>
-
-        <br>
-
-        <h2>ITP links</h2>
+<div id=navbar>
+  <img id=logo src="assets/Innod at USC Logo-01 1.png">
+  <div id=nav-ourteam class="navlink">Our Team</div>
+  <div id=nav-events class="navlink">Events</div>
+  <div id=nav-ourwork class="navlink">Our Work</div>
+  <button id=nav-button>Submit a Request</button>
+</div>
 
 
-    <div class=box1 >
+<section id=hero>
+<div id=hero-sub>
 
-    <h4>Forms</h4>
+<h1>Expand Your Creativity</h1>
+<p>Innovative Design is USC’s premier creative agency club! We are a community of designers, photographers, and web developers utilizing our skills to support other student organizations and their projects.</p>
 
-        <a href=forms/friendapplication.html target=_blank ><p>1: Be Gary's Friend</p></a>
-        <a href=forms/restaurantapplication.html target=_blank ><p>2: Order from Pot of Cha</p></a>
-    <a href=forms/futureself.html target=_blank ><p>3: Quiz to Future Self</p></a>
+<div id=buttons>
+<button id=red>Join Us</button>
+<button id=red-stroke>Work With Us</button>
+</div>
 
-    <br>
+</div>
+</section>
 
-    <h4>HTML Composite Studies</h4>
+<section id=section-2>
+<div style="float: left;"> <img style="width: 500px;"src="assets/graphic.png"> </div>
+<div style="float: left; margin-left: 100px;">
+<h2>What We Do</h2>
+<div><img style="width: 100px; float: left; "src="assets/squiggle.png"></div>
+<div style="float: left; padding-top: 20px; "id=p-white>
+  Our members spend a semester collaborating in a team on a professional client project.
+  <br>
+  <br>
+We coordinate design workshops, guest speakers, portfolio reviews, and mentorships to compliment the field work members complete with their teams.
+</div>
+<div><button style="margin-top: 20px;"id=see-our-work><a href="https://www.google.com" target="_blank">See Our Work</a></button></div>
 
-        <a href=avatar.html target=_blank ><p>Pop Culture Layering: Avatar the last airbender</p></a>
-
-        <a href=personal.html target=_blank ><p>Personal: WuHan, China Disposables</p></a>
-
-        <br>
-
-
-        <h4>Flex Box Studies</h4>
-
-            <a href=avatar.html target=_blank ><p>Pop Culture Layering: Avatar the last airbender</p></a>
-
-            <a href=personal.html target=_blank ><p>Personal: WuHan, China Disposables</p></a>
-
-
-        </div>
+</section>
 
 
-        <div class=box1 >
+<section id=section-3>
 
-    <h4>CSS Animation</h4>
+</section>
 
-        <a href=animations/anim_1.html target=_blank ><p>Animation 1</p></a>
-        <a href=animations/anim_2.html target=_blank ><p>Animation 2</p></a>
-        <a href=animations/anim_3.html target=_blank ><p>Animation 3</p></a>
-        <a href=animations/anim_4.html target=_blank ><p>Animation 4</p></a>
-        <a href=animations/anim_5.html target=_blank ><p>Animation 5</p></a>
+<section id=section-4>
 
-        <br>
+</section>
 
-    <h4>Responsiveness</h4>
+<section id=section-5>
 
-        <a href=responsive_boba.html target=_blank ><p>1: Boba Grid</p></a>
-        <a href=personal_responsive.html target=_blank ><p>2: WuHan Disposables</p></a>
-        </div>
+</section>
+
+<section id=section-6>
+
+</section>
+
+<div id=footer>
+
+</div>
 
     </body>
 </html>
