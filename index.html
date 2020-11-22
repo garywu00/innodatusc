@@ -13,10 +13,6 @@
 
         <style>
 body{
-position: relative;
-height: 4447px;
-margin: 0px;
-
 margin-left: auto;
 margin-right: auto;
 padding-left: auto;
@@ -24,187 +20,36 @@ padding-right: auto;
 background: #FFFFFF;
 }
 
-#hero{
-  background: linear-gradient(180deg, #FFFDF8 0%, #FEF6F4 100%);
-  width: 100%;
-  height: 850px;
-  left: 0px;
-  top: 0px;
+#logo {
+background: url(Innod at USC Logo-01.png);
 }
-h1 {
-  position: absolute;
-  width: 787px;
-  height: 78px;
-  left: 216px;
-  top: 238px;
 
-  /* H1 */
+#navbar {
+  display: flex;
+
+  position: fixed;
+  z-index: 2;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 100px;
 
   font-family: Futura;
   font-style: normal;
   font-weight: 500;
-  font-size: 72px;
-  line-height: 78px;
-  /* identical to box height, or 108% */
-
-  text-align: center;
-  letter-spacing: 0.01em;
-
-  /* Text */
-
-  color: #292929;
-}
-
-p {
-  position: absolute;
-  width: 634px;
-  height: 81px;
-  left: 293px;
-  top: 374px;
-
-  /* Body */
-
-  font-family: futura;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 150%;
-  /* or 27px */
-
-  text-align: center;
-
-  /* Copy */
+  font-size: 23px;
+  line-height: 36px;
 
   color: #4A4A4A;
 }
-#red {
-  display: flex;
-flex-direction: row;
-align-items: center;
-padding: 15px 80px;
-
-position: absolute;
-width: 240px;
-height: 66px;
-left: 333px;
-top: 499px;
-
-font-family: Futura;
-font-style: normal;
-font-weight: 100;
-font-size: 23px;
-line-height: 36px;
-/* identical to box height, or 157% */
-
-text-align: center;
-
-color: #FFFFFF;
 
 
-/* Inside Auto Layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 0px 0px;
-
-background: linear-gradient(90deg, #FF5662 0%, #FF7E7E 79.06%);
-border-radius: 10px;
-}
-
-#red-stroke {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 15px 44px;
-
-  position: absolute;
-  width: 242px;
-  height: 66px;
-  left: 590px;
-  top: 489px;
-
-  border-radius: 10px;
-  font-family: Futura;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 23px;
-  line-height: 36px;
-  /* identical to box height, or 157% */
-
-  text-align: center;
-
-  color: #FF5662;
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 10px 0px;
-
-  background-color: rgba(12, 23, 23, 0);
-  border-color: linear-gradient(90deg, #FF5662 0%, #FF7E7E 79.06%);
-  border-style: solid;
-}
-input, button, submit { border:none; }
-
-#logo {
-  position: absolute;
-width: 79px;
-height: 79px;
-left: 88px;
-top: 54px;
-
-background: url(Innod at USC Logo-01.png);
-}
-#navbar {
-  position: fixed;
-  z-index: 2;
-  background-color: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 26.23%);
-}
-.navlink {
-
-font-family: Futura;
-font-style: normal;
-font-weight: 500;
-font-size: 23px;
-line-height: 36px;
-
-color: #4A4A4A;
-}
-
-#nav-events {
-  position: absolute;
-width: 66px;
-height: 36px;
-left: 551px;
-top: 75px;
-}
-#nav-ourteam {
-position: absolute;
-width: 104px;
-height: 36px;
-left: 392px;
-top: 75px;
-}
-#nav-ourwork {
-  position: absolute;
-width: 106px;
-height: 36px;
-left: 671px;
-top: 75px;
-}
 #nav-button {
   display: flex;
 flex-direction: row;
 align-items: center;
 padding: 15px 30px;
-
-position: absolute;
-width: 240px;
-height: 48px;
-left: 935px;
-top: 62px;
 
 background: linear-gradient(90deg, #FF5662 0%, #FF7E7E 79.06%);
 border-radius: 10px;
@@ -228,14 +73,139 @@ flex-grow: 0;
 margin: 10px 0px;
 }
 
+#hero{
+  display: flex;
+
+  background: linear-gradient(180deg, #FFFDF8 0%, #FEF6F4 100%);
+  width: 100%;
+  height: auto;
+  left: 0px;
+  top: 0px;
+}
+
+#hero-sub {
+  width: 900px;
+  height: auto;
+  padding-top: auto;
+  padding-bottom: auto;
+  margin: auto;
+
+  position: relative;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+#hero-buttons {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  width: auto;
+  padding: auto;
+  margin: auto;
+  margin-top: 40px;
+}
+h1 {
+  /* H1 */
+
+  font-family: Futura;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 78px;
+  line-height: 100px;
+  /* identical to box height, or 108% */
+
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  /* Text */
+
+  color: #292929;
+}
+
+p {
+
+  /* Body */
+
+  font-family: futura;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  text-align: center;
+
+  /* Copy */
+
+  color: #4A4A4A;
+}
+#red {
+  display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+width: 240px;
+
+font-family: Futura;
+font-style: normal;
+font-weight: 100;
+font-size: 24px;
+line-height: 30px;
+/* identical to box height, or 157% */
+
+text-align: center;
+
+color: #FFFFFF;
+
+
+background: linear-gradient(90deg, #FF5662 0%, #FF7E7E 79.06%);
+border-radius: 10px;
+}
+
+#red-stroke {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 240px;
+
+  border-radius: 10px;
+  font-family: Futura;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 30px;
+  /* identical to box height, or 157% */
+
+  text-align: center;
+
+  color: #FF5662;
+
+
+  background-color: rgba(12, 23, 23, 0);
+  border-color: linear-gradient(90deg, #FF5662 0%, #FF7E7E 79.06%);
+  border-style: solid;
+}
+input, button, submit { border:none; }
+
 #section-2 {
 
 width: 100%;
-height: 600px;
+height: auto;
 padding-top: 100px;
-padding-left: 50px;
-padding-right: 50px;
+padding-bottom: 100px;
+padding-left: 0px;
+padding-right: 0px;
 background: #1C1818;
+margin-left: auto;
+margin-right: auto;
+
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
 }
 
 h2 {
@@ -341,22 +311,27 @@ a.black:active {
     <body>
 
 <div id=navbar>
-  <a href="index.html"><img id=logo src="assets/Innod at USC Logo-01 1.png"></a>
-  <div id=nav-ourteam class="navlink"><a class="black" href="ourteam.html">Our Team</a></div>
-  <div id=nav-events class="navlink"><a class="black" href="events.html">Events</a></div>
-  <div id=nav-ourwork class="navlink"><a class="black" href="ourwork.html">Our Work</a></div>
-  <button id=nav-button>Submit a Request</button>
-</div>
+
+  <div><a href="index.html"><img style="width: 80px; "id=logo src="assets/Innod at USC Logo-01 1.png"></a></div>
+
+  <a class="black" style="padding-top: 0px; padding-bottom: auto; margin-right: 0px;"href="ourteam.html">Our Team</a>
+  <a class="black" style="padding-top: 0px; padding-bottom: auto; margin-right: 0px;"href="events.html">Events</a>
+  <a class="black" style="padding-top: 0px; padding-bottom: auto; margin-right: 0px;"href="ourwork.html">Our Work</a>
+  <button id=nav-button style="height: 60px;">Submit a Request</button>
+
+</div><!-- #navbar -->
+
 
 
 <section id=hero>
+
 <div id=hero-sub>
 
 <h1>Expand Your Creativity</h1>
-<p>Innovative Design is USC’s premier creative agency club! We are a community of designers, photographers, and web developers utilizing our skills to support other student organizations and their projects.</p>
+<p style="margin-top: -30px;">Innovative Design is USC’s premier creative agency club! We are a community of designers, photographers, and web developers utilizing our skills to support other student organizations and their projects.</p>
 
-<div id=buttons>
-<button id=red>Join Us</button>
+<div id=hero-buttons>
+<button style="margin-right: 40px;"id=red>Join Us</button>
 <button id=red-stroke>Work With Us</button>
 </div>
 
@@ -364,11 +339,11 @@ a.black:active {
 </section>
 
 <section id=section-2>
-<div style="float: left;"> <img style="width: 500px;"src="assets/graphic.png"> </div>
-<div style="float: left; margin-left: 100px;">
+<div style="float: left;"> <img style="width: 400px; height: auto; margin-right: 100px; margin-bottom: 40px;"src="assets/graphic.png"> </div>
+<div style="float: left; height: auto;">
 <h2>What We Do</h2>
 <div><img style="width: 100px; float: left; "src="assets/Squiggle.png"></div>
-<div style="float: left; padding-top: 20px; "id=p-white>
+<div style="padding-top: 20px; "id=p-white>
   Our members spend a semester collaborating in a team on a professional client project.
   <br>
   <br>
