@@ -263,6 +263,51 @@ color: #FFFFFF;
   border-style: solid;
 }
 
+.button {
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #FF5662;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: Futura;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 100%;
+  padding: 20px;
+  width: 240px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\203A';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+---
 /* unvisited link */
 a.white:link {
   color: white;
@@ -280,7 +325,7 @@ a.white:hover {
 }
 /* selected link */
 a.white:active {
-  color: #FF5669;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -314,11 +359,13 @@ a.black:active {
 
   <div><a href="index.html"><img style="width: 80px; "id=logo src="assets/Innod at USC Logo-01 1.png"></a></div>
 
-  <a class="black" style="padding-top: 0px; padding-bottom: auto; margin-right: 0px;"href="ourteam.html">Our Team</a>
-  <a class="black" style="padding-top: 0px; padding-bottom: auto; margin-right: 0px;"href="events.html">Events</a>
-  <a class="black" style="padding-top: 0px; padding-bottom: auto; margin-right: 0px;"href="ourwork.html">Our Work</a>
-  <button id=nav-button style="height: 60px;">Submit a Request</button>
-
+  <div style="display: flex; flex-wrap: wrap; margin-left: 20px; margin-right: 20px; justify-content: center;">
+    <a class="black" style="padding-top: 10px; padding-bottom: auto; margin-right: 50px; margin-bottom: 20px;"href="ourteam.html">Our Team</a>
+    <a class="black" style="padding-top: 10px; padding-bottom: auto; margin-right: 50px; margin-bottom: 20px;"href="events.html">Events</a>
+    <a class="black" style="padding-top: 10px; padding-bottom: auto; margin-right: 50px; margin-bottom: 20px;"href="ourwork.html">Our Work</a>
+    <div><a href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank"><button class="button" style="vertical-align:middle;"><span>Submit A Request</span></button></a></div>
+  </div>
+  
 </div><!-- #navbar -->
 
 
@@ -331,8 +378,8 @@ a.black:active {
 <p style="margin-top: -30px;">Innovative Design is USC’s premier creative agency club! We are a community of designers, photographers, and web developers utilizing our skills to support other student organizations and their projects.</p>
 
 <div id=hero-buttons>
-<button style="margin-right: 40px;"id=red>Join Us</button>
-<button id=red-stroke>Work With Us</button>
+    <div><a href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank"><button class="button" style="vertical-align:middle; margin-right: 40px;"><span>Join Us</span></button></a></div>
+    <div><a href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank"><button class="button" style="vertical-align:middle; color: #FF5662; background-color: rgba(12, 23, 23, 0); box-shadow: 0px 0px 0px 3px #FF5662 inset; border-color: #FF5662;"><span>Work With Us</span></button></a></div>
 </div>
 
 </div>
@@ -349,8 +396,7 @@ a.black:active {
   <br>
 We coordinate design workshops, guest speakers, portfolio reviews, and mentorships to compliment the field work members complete with their teams.
 </div>
-<div><button style="margin-top: 20px;"id=see-our-work><a class="white" href="https://www.google.com" target="_blank">See Our Work</a></button></div>
-
+<div><a href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank"><button class="button" style="vertical-align:middle; margin-top: 20px;"><span>See Our Work</span></button></a></div>
 </section>
 
 
