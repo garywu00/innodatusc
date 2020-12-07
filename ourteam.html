@@ -11,13 +11,20 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
-        <style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+<script>document.getElementsByTagName("html")[0].className += " js";</script>
+<link rel="stylesheet" href="assets-top/css/style.css">
+<style>
+
 body{
 margin-left: auto;
 margin-right: auto;
 padding-left: auto;
 padding-right: auto;
-background: #FFFFFF;
+margin-top: 0px;
+background-color: #FFFFFF;
 }
 
 #logo {
@@ -26,14 +33,14 @@ background: url(Innod at USC Logo-01.png);
 
 #navbar {
   display: flex;
+  align-items: center;
 
-  position: fixed;
   z-index: 2;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  width: 100%;
-  height: 100px;
+  width: 80%;
+  height: 120px;
 
   font-family: Futura;
   font-style: normal;
@@ -73,30 +80,6 @@ flex-grow: 0;
 margin: 10px 0px;
 }
 
-#hero{
-  display: flex;
-
-  background: linear-gradient(180deg, #FFFDF8 0%, #FEF6F4 100%);
-  width: 100%;
-  height: auto;
-  left: 0px;
-  top: 0px;
-}
-
-#hero-sub {
-  width: 900px;
-  height: auto;
-  padding-top: auto;
-  padding-bottom: auto;
-  margin: auto;
-
-  position: relative;
-  margin-top: 200px;
-  margin-bottom: 200px;
-  padding-right: 80px;
-  padding-left: 80px;
-}
-
 #hero-buttons {
   display: flex;
   justify-content: center;
@@ -113,10 +96,9 @@ h1 {
   font-style: normal;
   font-weight: 500;
   font-size: 78px;
-  line-height: 100px;
+  line-height: 60px;
   /* identical to box height, or 108% */
 
-  text-align: center;
   letter-spacing: 0.01em;
 
   /* Text */
@@ -127,15 +109,11 @@ h1 {
 p {
 
   /* Body */
-
-  font-family: futura;
+  font-family: 'Josefin Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 150%;
-  /* or 27px */
-
-  text-align: center;
+  line-height: 100%;
 
   /* Copy */
 
@@ -191,45 +169,34 @@ border-radius: 10px;
 }
 input, button, submit { border:none; }
 
-#section-2 {
-
-width: 100%;
-height: auto;
-padding-top: 100px;
-padding-bottom: 100px;
-padding-left: 0px;
-padding-right: 0px;
-background: #1C1818;
-margin-left: auto;
-margin-right: auto;
-
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-}
-
 h2 {
-  /* H2 */
-
-font-family: Futura;
+font-family: 'Josefin Sans', sans-serif;
 font-style: normal;
 font-weight: 500;
 font-size: 36px;
-line-height: 34px;
+line-height: 36px;
 /* identical to box height, or 96% */
-
-
-/* Design System / Background */
-
 color: #FBFAF8;
 }
+
+h3 {
+font-family: 'Josefin Sans', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 24px;
+/* identical to box height, or 96% */
+color: #FBFAF8;
+}
+
+
 #p-white {
 
 /* Body */
-width: 400px;
-font-family: Futura;
+width: 500px;
+font-family: 'Josefin Sans', sans-serif;
 font-style: normal;
-font-weight: normal;
+font-weight: 400;
 font-size: 18px;
 line-height: 150%;
 /* or 27px */
@@ -237,32 +204,29 @@ line-height: 150%;
 color: #FFFFFF;
 }
 
-#see-our-work {
-  align-items: center;
-  padding: 10px 40px;
 
-  border-radius: 10px;
-  font-family: Futura;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 20px;
-  line-height: 28px;
-  /* identical to box height, or 157% */
+#section-3 {
+  height: auto;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
 
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  }
 
-  color: #FF5662;
-  /* Inside Auto Layout */
 
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+#footer {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
-  background-color: rgba(12, 23, 23, 0);
-  border-color: linear-gradient(90deg, #FF5662 0%, #FF7E7E 79.06%);
-  border-style: solid;
+  display: flex;
+  justify-content: center;
 }
-
 .button {
   display: inline-block;
   border-radius: 6px;
@@ -275,8 +239,8 @@ color: #FFFFFF;
   font-weight: normal;
   font-size: 22px;
   line-height: 100%;
-  padding: 20px;
-  width: 240px;
+  padding: 15px;
+  width: 230px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 0px;
@@ -350,75 +314,178 @@ a.black:active {
   text-decoration: none;
 }
 
+/* unvisited link */
+a.red:link {
+  color: #FF5662;
+  text-decoration: none;
+}
+/* visited link */
+a.red:visited {
+  color: #FF5662;
+  text-decoration: none;
+}
+/* mouse over link */
+a.red:hover {
+  color: #B93942;
+  text-decoration: none;
+}
+/* selected link */
+a.red:active {
+  color: #FF5662;
+  text-decoration: none;
+}
+
+
+.headshot {
+  width: auto;
+  margin: 15px;
+}
+
+.headshot div {
+  width: 200px;
+  display: flex;
+  margin-bottom: -40px;
+  margin-left: -40px;
+}
+
+.headshot h3 {
+  color: #4A4A4A;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.headshot p {
+  display: flex;
+  font-weight: 400;
+  margin-top: -14px;
+  font-size: 16px;
+}
         </style>
 
     </head>
+
     <body>
 
+      <div style="display: flex; justify-content: center;">
 <div id=navbar>
 
-  <div><a href="index.html"><img style="width: 80px; "id=logo src="assets/Innod at USC Logo-01 1.png"></a></div>
+  <div style="margin-bottom: 10px;"><a href="index.html"><img style="width: 80px; margin-left: -10px;"id=logo src="assets/Innod at USC Logo-01 1.png"></a></div>
 
-  <div style="display: flex; flex-wrap: wrap; margin-left: 20px; margin-right: 20px; justify-content: center;">
-    <a class="black" style="padding-top: 10px; padding-bottom: auto; margin-right: 50px; margin-bottom: 20px;"href="ourteam.html">Our Team</a>
-    <a class="black" style="padding-top: 10px; padding-bottom: auto; margin-right: 50px; margin-bottom: 20px;"href="events.html">Events</a>
-    <a class="black" style="padding-top: 10px; padding-bottom: auto; margin-right: 50px; margin-bottom: 20px;"href="ourwork.html">Our Work</a>
-    <div><a href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank"><button class="button" style="vertical-align:middle;"><span>Submit A Request</span></button></a></div>
-  </div>
-  
+<div style="display: flex; margin-left: 20px; margin-right: 20px; justify-content: center; align-items: center;">
+  <a class="black" style="padding-bottom: auto; margin-right: 50px; margin-left: 50px;"href="ourteam.html">Our Team</a>
+  <a class="black" style="padding-bottom: auto; margin-right: 50px;"href="events.html">Events</a>
+  <a class="black" style="padding-bottom: auto; margin-right: 50px;"href="ourwork.html">Our Work</a>
+  <div><a href="https://uscinnovativedesign.typeform.com/to/AFPLN4ym" target="_blank"><button class="button" style="vertical-align:middle;"><span>Submit A Request</span></button></a></div>
+</div>
+
 </div><!-- #navbar -->
-
-
-
-<section id=hero>
-
-<div id=hero-sub>
-
-<h1>Our Team</h1>
-<p style="margin-top: -30px;">Innovative Design is USC’s premier creative agency club! We are a community of designers, photographers, and web developers utilizing our skills to support other student organizations and their projects.</p>
-
-<div id=hero-buttons>
-    <div><a href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank"><button class="button" style="vertical-align:middle; margin-right: 40px;"><span>Join Us</span></button></a></div>
-    <div><a href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank"><button class="button" style="vertical-align:middle; color: #FF5662; background-color: rgba(12, 23, 23, 0); box-shadow: 0px 0px 0px 3px #FF5662 inset; border-color: #FF5662;"><span>Work With Us</span></button></a></div>
 </div>
-
-</div>
-</section>
-
-<section id=section-2>
-<div style="float: left;"> <img style="width: 400px; height: auto; margin-right: 100px; margin-bottom: 40px;"src="assets/graphic.png"> </div>
-<div style="float: left; height: auto;">
-<h2>What We Do</h2>
-<div><img style="width: 100px; float: left; "src="assets/Squiggle.png"></div>
-<div style="padding-top: 20px; "id=p-white>
-  Our members spend a semester collaborating in a team on a professional client project.
-  <br>
-  <br>
-We coordinate design workshops, guest speakers, portfolio reviews, and mentorships to compliment the field work members complete with their teams.
-</div>
-<div><a href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank"><button class="button" style="vertical-align:middle; margin-top: 20px;"><span>See Our Work</span></button></a></div>
-</section>
-
 
 <section id=section-3>
 
-</section>
+  <div style="width: 80%;">
+  <h1 style="color: #4A4A4A; margin-bottom: 40px;">Our Team</h1>
+  <div><img style="width: 100px; "src="assets/Squiggle.png"></div>
+  <div style="padding-top: 20px; color: #4A4A4A; "id=p-white>
+Our club events and operations are led by our board members. Team leads guide a design, photo or web design client throughout the design process.</div>
 
-<section id=section-4>
+<div style="width: 100%; margin-top: 20px; display: flex; flex-wrap: wrap;">
 
-</section>
+<div class="headshot">
+  <div><img src="assets/gloria.png"></div>
+  <h3>Gloria Guo</h3>
+  <p>Co-President</p>
+</div>
 
-<section id=section-5>
+<div class="headshot">
+  <div><img src="assets/gary.png"></div>
+  <h3>Gary Wu</h3>
+  <p>Co-President</p>
+</div>
 
-</section>
+<div class="headshot">
+  <div><img src="assets/colette.png"></div>
+  <h3>Colette Zhou</h3>
+  <p>Design Team Lead</p>
+</div>
 
-<section id=section-6>
+<div class="headshot">
+  <div><img src="assets/colette.png"></div>
+  <h3>Colette Zhou</h3>
+  <p>Design Team Lead</p>
+</div>
 
-</section>
+<div class="headshot">
+  <div><img src="assets/colette.png"></div>
+  <h3>Colette Zhou</h3>
+  <p>Design Team Lead</p>
+</div>
 
-<div id=footer>
+<div class="headshot">
+  <div><img src="assets/gloria.png"></div>
+  <h3>Gloria Guo</h3>
+  <p>Co-President</p>
+</div>
+
+<div class="headshot">
+  <div><img src="assets/gary.png"></div>
+  <h3>Gary Wu</h3>
+  <p>Co-President</p>
+</div>
+
+<div class="headshot">
+  <div><img src="assets/colette.png"></div>
+  <h3>Colette Zhou</h3>
+  <p>Design Team Lead</p>
+</div>
+
+<div class="headshot">
+  <div><img src="assets/colette.png"></div>
+  <h3>Colette Zhou</h3>
+  <p>Design Team Lead</p>
+</div>
+
+<div class="headshot">
+  <div><img src="assets/colette.png"></div>
+  <h3>Colette Zhou</h3>
+  <p>Design Team Lead</p>
+</div>
+
 
 </div>
 
+  <div style="margin-top: 20px;display: flex;">
+    <div><a href="https://uscinnovativedesign.typeform.com/to/AFPLN4ym" target="_blank"><button class="button" style="vertical-align:middle; color: #FF5662; background-color: rgba(12, 23, 23, 0); box-shadow: 0px 0px 0px 3px #FF5662 inset; border-color: #FF5662;"><span>Join Us</span></button></a></div>
+  </div>
+
+</section>
+
+
+<div style="width: 100%; height: 1px; background-color: black; opacity: 5%;"></div>
+
+<div id=footer style="width: 100%;">
+  <div style="width: 80%; display: flex; justify-content: center; flex-direction: column;">
+    <p style="color: #D6D6D6;">Contact Us</p>
+
+    <div style="display: flex; justify-content: flex-start; align-items: center; width: 400px; margin-top: 10px; margin-bottom: 20px;">
+      <a href="https://www.instagram.com/innodatusc/" target="_blank"><img style="width: 30px; margin-right: 40px;"src="assets/Instagram.png">
+      <a href="https://www.behance.net/wipatusc" target="_blank"><img style="width: 40px; margin-right: 40px;"src="assets/Behance.png">
+      <a href="mailto:designatsc@gmail.com" target="_blank"><img style="width: 30px; margin-right: 40px;"src="assets/Email.png">
+        <a href="https://www.facebook.com/innodatusc" target="_blank"><img style="width: 30px; margin-right: 40px;"src="assets/facebook.png">
+          <a href="https://lu.ma/innodatusc" target="_blank"><img style="width: 100px; margin-right: 40px;"src="assets/luma.png">
+    </div>
+
+<div style="display: flex; align-items: center;">
+  <div style="margin-bottom: 10px; margin-right: 10px;width: auto;"><a href="index.html"><img style="width: 40px; margin-left: -10px;"id=logo src="assets/Innod at USC Logo-01 1.png"></a></div>
+<p style="color: #4A4A4A;">Made with love by Innovative Design at USC</p>
+</div>
+</div>
+
+</div>
+
+<a style="border-radius: 8px; "href="#" class="cd-top text-replace js-cd-top">Top</a>
+<script src="assets-top/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+<script src="assets-top/js/main.js"></script>
     </body>
+
 </html>
