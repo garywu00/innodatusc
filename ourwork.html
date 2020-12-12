@@ -80,28 +80,6 @@ flex-grow: 0;
 margin: 10px 0px;
 }
 
-#hero{
-  display: flex;
-
-  background: linear-gradient(180deg, #FFFDF8 0%, #FEF6F4 100%);
-  width: 100%;
-  height: auto;
-}
-
-#hero-sub {
-  width: 900px;
-  height: auto;
-  padding-top: auto;
-  padding-bottom: auto;
-  margin: auto;
-
-  position: relative;
-  margin-top: 100px;
-  margin-bottom: 200px;
-  padding-right: 80px;
-  padding-left: 80px;
-}
-
 #hero-buttons {
   display: flex;
   justify-content: center;
@@ -112,21 +90,31 @@ margin: 10px 0px;
   margin-top: 40px;
 }
 h1 {
-  /* H1 */
-
   font-family: Futura;
   font-style: normal;
-  font-weight: 500;
-  font-size: 78px;
-  line-height: 100px;
-  /* identical to box height, or 108% */
-
-  text-align: center;
+  font-weight: 400;
+  font-size: 70px;
+width: auto;
   letter-spacing: 0.01em;
 
+margin: 0px;
+margin-bottom: 10px;
   /* Text */
 
   color: #292929;
+}
+
+h4 {
+  font-family: Futura;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: normal;
+  width: auto;
+  letter-spacing: 0.01em;
+  /* Text */
+
+  color: grey;
 }
 
 p {
@@ -136,7 +124,7 @@ p {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 100%;
 
   /* Copy */
 
@@ -192,31 +180,15 @@ border-radius: 10px;
 }
 input, button, submit { border:none; }
 
-#section-2 {
-
-width: 100%;
-height: auto;
-padding-top: 100px;
-padding-bottom: 100px;
-padding-left: 0px;
-padding-right: 0px;
-background: #1C1818;
-margin-left: auto;
-margin-right: auto;
-
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-}
-
 h2 {
 font-family: 'Josefin Sans', sans-serif;
 font-style: normal;
 font-weight: 500;
 font-size: 36px;
-line-height: 36px;
+line-height: normal;
 /* identical to box height, or 96% */
 color: #FBFAF8;
+margin-bottom: -15px;
 }
 
 h3 {
@@ -224,7 +196,7 @@ font-family: 'Josefin Sans', sans-serif;
 font-style: normal;
 font-weight: 500;
 font-size: 24px;
-line-height: 24px;
+line-height: normal;
 /* identical to box height, or 96% */
 color: #FBFAF8;
 }
@@ -233,7 +205,7 @@ color: #FBFAF8;
 #p-white {
 
 /* Body */
-width: 400px;
+width: auto;
 font-family: 'Josefin Sans', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -244,36 +216,11 @@ line-height: 150%;
 color: #FFFFFF;
 }
 
-#see-our-work {
-  align-items: center;
-  padding: 10px 40px;
-
-  border-radius: 10px;
-  font-family: Futura;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 20px;
-  line-height: 28px;
-  /* identical to box height, or 157% */
-
-  text-align: center;
-
-  color: #FF5662;
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-  background-color: rgba(12, 23, 23, 0);
-  border-color: linear-gradient(90deg, #FF5662 0%, #FF7E7E 79.06%);
-  border-style: solid;
-}
 
 #section-3 {
   height: auto;
   width: 100%;
-  padding-top: 100px;
+  padding-top: 0px;
   padding-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
@@ -283,42 +230,24 @@ color: #FFFFFF;
   }
 
   #section-4 {
-    width: 100%;
-    height: auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 0px;
-    padding-right: 0px;
-    background: #1C1818;
-    margin-left: auto;
-    margin-right: auto;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-#section-5 {
-  width: 100%;
-  height: auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
-
   display: flex;
-  justify-content: center;
-}
-
-#section-6 {
-  width: 100%;
-  height: auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
-
-  background-color: #F0F0F0;
-  display: flex;
-  justify-content: center;
   flex-direction: column;
-}
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background: #1C1818;
+    }
+
+    #section-5 {
+      width: 100%;
+      height: auto;
+      padding-top: 100px;
+      padding-bottom: 100px;
+
+      display: flex;
+      justify-content: center;
+    }
 
 #footer {
   width: 100%;
@@ -438,148 +367,123 @@ a.red:active {
 }
 
 
+.headshot {
+  width: auto;
+  margin: 40px;
+}
+
+.headshot h3 {
+  color: #4A4A4A;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.headshot p {
+  display: flex;
+  font-weight: 400;
+  margin-top: -14px;
+  font-size: 16px;
+}
+
+.headshot div img{
+  width: 200px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.project {
+  width: 400px;
+  height: auto;
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+
+.project div {
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.project div:hover {
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 4px 8px #3A3A3A;
+  top: -5px;
+  opacity: 80%;
+}
         </style>
 
     </head>
 
     <body>
+
       <div style="display: flex; justify-content: center;">
-      <div id=navbar>
+<div id=navbar>
 
-      <div style="margin-bottom: 10px;"><a href="index.html"><img style="width: 80px; margin-left: -10px;"id=logo src="assets/Innod at USC Logo-01 1.png"></a></div>
+  <div style="margin-bottom: 10px;"><a href="index.html"><img style="width: 80px; margin-left: -10px;"id=logo src="assets/Innod at USC Logo-01 1.png"></a></div>
 
-      <div style="display: flex; margin-left: 20px; margin-right: 20px; justify-content: center; align-items: center;">
-      <a class="black" style="padding-bottom: auto; margin-right: 50px; margin-left: 50px;"href="ourteam.html">Our Team</a>
-      <a class="black" style="padding-bottom: auto; margin-right: 50px;"href="events.html">Events</a>
-      <a class="black" style="padding-bottom: auto; margin-right: 50px;"href="ourwork.html">Our Work</a>
-      <div><a href="https://uscinnovativedesign.typeform.com/to/AFPLN4ym" target="_blank"><button class="button" style="vertical-align:middle;"><span>Submit A Request</span></button></a></div>
-      </div>
-
-      </div><!-- #navbar -->
-      </div>
-
-
-
-<section id=hero>
-
-<div id=hero-sub>
-
-<h1>Our Work</h1>
-<p style="margin-top: -30px; text-align: center;">Innovative Design is USC’s premier creative agency club! We are a community of designers, photographers, and web developers utilizing our skills to support other student organizations and their projects.</p>
-
-<div id=hero-buttons>
-    <div><a href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank"><button class="button" style="vertical-align:middle; margin-right: 40px;"><span>Join Us</span></button></a></div>
-    <div><a href="https://uscinnovativedesign.typeform.com/to/AFPLN4ym" target="_blank"><button class="button" style="vertical-align:middle; color: #FF5662; background-color: rgba(12, 23, 23, 0); box-shadow: 0px 0px 0px 3px #FF5662 inset; border-color: #FF5662;"><span>Work With Us</span></button></a></div>
+<div style="display: flex; margin-left: 20px; margin-right: 20px; justify-content: center; align-items: center;">
+  <a class="black" style="padding-bottom: auto; margin-right: 50px; margin-left: 50px;"href="ourteam.html">Our Team</a>
+  <a class="black" style="padding-bottom: auto; margin-right: 50px;"href="events.html">Events</a>
+  <a class="black" style="padding-bottom: auto; margin-right: 50px;"href="ourwork.html">Our Work</a>
+  <div><a href="https://uscinnovativedesign.typeform.com/to/AFPLN4ym" target="_blank"><button class="button" style="vertical-align:middle;"><span>Submit A Request</span></button></a></div>
 </div>
 
+</div><!-- #navbar -->
 </div>
-</section>
 
-<section id=section-2>
-<div style="float: left;"> <img style="width: 400px; height: auto; margin-right: 100px; margin-bottom: 40px;"src="assets/graphic.png"> </div>
-<div style="float: left; height: auto;">
-<h2>What We Do</h2>
-<div><img style="width: 100px; "src="assets/Squiggle.png"></div>
-<div style="padding-top: 20px; "id=p-white>
-  Our members spend a semester collaborating in a team on a professional client project.
-  <br>
-  <br>
-We coordinate design workshops, guest speakers, portfolio reviews, and mentorships to compliment the field work members complete with their teams.
-</div>
-<div><a href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank"><button class="button" style="vertical-align:middle; color: #FFFFFF; background-color: rgba(12, 23, 23, 0); box-shadow: 0px 0px 0px 3px #FF5662 inset; border-color: #FF5662; margin-top: 20px;"><span>See Our Work</span></button></a></div>
-</section>
+<section id=section-3 style="margin-top: 64px; justify-content: center; display: flex; width: 80%;">
 
-
-<section id=section-3>
-
-  <div style="width: 60%;">
-  <h2 style="color: #4A4A4A;">Our Services</h2>
+  <div style="width: 100%;">
+  <h1 style="color: #4A4A4A; margin-bottom: 40px; font-weight: 500; font-size: 78px; line-height: 60px;">Our Work</h1>
   <div><img style="width: 100px; "src="assets/Squiggle.png"></div>
-  <div style="padding-top: 20px; color: #4A4A4A; "id=p-white>
-No project is too big or too small! We’d love to hear from you. Submit a work request to learn more about how InnoD can help your project.
-</div>
-
-<div style="width: 100%; margin-top: 20px; display: flex; justify-content: center; flex-wrap: wrap; align-items: flex-end;">
-
-<div style="width: auto; margin: 35px;">
-  <div style="display: flex; justify-content: center; align-items: center;"><img style="width: 130px; margin-bottom: 20px; padding-left: 40px;"src="assets/icon_design.png"></div>
-  <h3 style="color: #4A4A4A; text-align: center;">Graphic Design</h3>
-  <p style="display: flex; justify-content: center; font-weight: 400">Logos, fliers, branding</p>
-</div>
-
-<div style="width: auto; margin: 35px;">
-  <div style="display: flex; justify-content: center; align-items: center;"><img style="width: 160px; margin-bottom: 20px; padding-left: 20px;"src="assets/icon_photo.png"></div>
-  <h3 style="color: #4A4A4A; text-align: center;">Photo</h3>
-  <p style="display: flex; justify-content: center; font-weight: 400">Logos, fliers, branding</p>
-</div>
-
-<div style="width: auto; margin: 35px;">
-  <div style="display: flex; justify-content: center; align-items: center;"><img style="width: 160px; margin-bottom: 20px;"src="assets/icon_web.png"></div>
-  <h3 style="color: #4A4A4A; text-align: center;">Web Design</h3>
-  <p style="display: flex; justify-content: center; font-weight: 400">Logos, fliers, branding</p>
-</div>
-
-</div>
-
-  <div style="margin-top: 20px;display: flex; justify-content: center;">
-    <div><a href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank"><button class="button" style="vertical-align:middle; color: #FF5662; background-color: rgba(12, 23, 23, 0); box-shadow: 0px 0px 0px 3px #FF5662 inset; border-color: #FF5662;"><span>Work With Us</span></button></a></div>
-  </div>
+  <div style="padding-top: 20px; color: #4A4A4A; width: 600px;"id=p-white>
+Featured web, photography, and graphic design client projects.
+<div style="margin-top: 20px;"><a href="https://www.notion.so/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank"><button class="button" style="vertical-align:middle; color: #FF5662; background-color: rgba(12, 23, 23, 0); box-shadow: 0px 0px 0px 3px #FF5662 inset; border-color: #FF5662;"><span>See Our Work</span></button></a></div>
 
 </section>
 
 <section id=section-4>
-  <div style="float: left; display: flex; justify-content: center; flex-wrap: wrap; align-items: center; width: 80%;">
-    <div style="float: left; height: auto; margin-right: 100px; margin-bottom: 60px;">
-  <h2>Our Team</h2>
-  <div><img style="width: 100px; "src="assets/Squiggle.png"></div>
-  <div style="padding-top: 20px; "id=p-white>
-    Each team consists of 2 team leads and 4-6 team members that actively work on 2 client projects per term.
-    <br>
-    <br>
-    We also have an executive board that hosts events, outreach, and activities to manage our members! Learn more about our board below!
-    <br>
-  </div>
-  <div><a href="ourteam.html" target="_blank"><button class="button" style="vertical-align:middle; color: #FFFFFF; background-color: rgba(12, 23, 23, 0); box-shadow: 0px 0px 0px 3px #FF5662 inset; border-color: #FF5662; margin-top: 20px;"><span>Our Team</span></button></a></div>
- </div>
-  <img style="width: 600px; height: auto;"src="assets/our_team.png">
-  </div>
+
+<div style="float: left; display: flex; justify-content: center; flex-wrap: wrap; align-items: flex-start; width: 80%;">
+
+<div class="project">
+<a href="https://www.notion.so/American-Medical-Women-s-Association-AMWA-8ed475d0437b4cacac42d58d7397a87b" target="_blank"><div style="background: url(assets/amwa_hero.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;"></div></a>
+<h2>American Medical Women's Association</h2>
+<h4>Illustrated sticker designers for a fundraiser campaign</h4>
+</div>
+
+<div class="project">
+<a href="https://www.notion.so/Operation-Math-9ef4acc99a2e4694a43237f09efe842b" target="_blank"><div style="background: url(assets/opmath_hero.png); background-repeat: no-repeat; background-size: cover; background-position: center;"></div></a>
+<h2>OP Math</h2>
+<h4>Promotional Graphics for a tech-based Tutoring Company</h4>
+</div>
+
+<div class="project">
+  <a href="" target="_blank"><div style="background: url(assets/riptide.png); background-repeat: no-repeat; background-size: cover; background-position: center;"></div></a>
+<h2>Micogreen Guam</h2>
+<h4>SuFull Website Redesign for an online produce store</h4>
+</div>
+
+<div class="project">
+  <a href="https://www.notion.so/Asian-American-Tutorial-Project-AATP-f999255d0e1e426eaca174a0bdf0c1c4" target="_blank"><div style="background: url(assets/aatp_hero.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;"></div></a>
+<h2>Asian American Tutorial Project</h2>
+<h4>Logo design for an asian interest tutoring organization</h4>
+</div>
+
+<div class="project">
+  <a href="https://www.notion.so/Family-Business-Society-519ab71f8bb442758d3bfe245434e4dc" target="_blank"><div style="background: url(assets/fbs_hero.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;"></div></a>
+<h2>Family Business Society</h2>
+<h4>Logo design for a professional network of future family business owners</h4>
+</div>
+
+</div>
+
 </section>
 
-<section id=section-5>
-  <div style="width: 600px; margin-left: auto; margin-right: auto; text-align: center;">
-<h2 style="color: #4A4A4A;">Join Us</h2>
-<div><img style="width: 100px; "src="assets/Squiggle.png"></div>
-<div style="padding-top: 20px;">
-  <p>We’re looking for innovative and passionate creatives wanting to contribute to both the USC and greater Los Angeles community.
-</p>
-  <div style="margin-top: 40px;"><a href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank"><button class="button" style="vertical-align:middle;"><span>Join Us</span></button></a></div>
-</div>
-</section>
 
-<section id=section-6>
-<div style="width: 600px; margin-left: auto; margin-right: auto; text-align: center;">
-  <h2 style="color: #4A4A4A;">Past Clients</h2>
-  <div><img style="width: 100px; "src="assets/Squiggle.png"></div>
-  <div style="padding-top: 20px;">
-    <p><span><a class="red" href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank">Click here</a></span> to check out our work
-  </p>
-</div>
-</div>
-<div style="display: flex; flex-wrap: wrap; width: 80%; justify-content: center; margin-left: auto; margin-right: auto; align-items: center;">
-  <img style="width: 200px; display: flex; align-items: center;"src="assets/gloria.png">
-  <img style="width: 200px; display: flex; align-items: center;"src="assets/gloria.png">
-  <img style="width: 200px; display: flex; align-items: center;"src="assets/gloria.png">
-  <img style="width: 200px; display: flex; align-items: center;"src="assets/gloria.png">
-  <img style="width: 200px; display: flex; align-items: center;"src="assets/gloria.png">
-  <img style="width: 200px; display: flex; align-items: center;"src="assets/gloria.png">
-  <img style="width: 200px; display: flex; align-items: center;"src="assets/gloria.png">
-  <img style="width: 200px; display: flex; align-items: center;"src="assets/gloria.png">
-  <img style="width: 200px; display: flex; align-items: center;"src="assets/gloria.png">
-  <img style="width: 200px; display: flex; align-items: center;"src="assets/gloria.png">
-  <img style="width: 200px; display: flex; align-items: center;"src="assets/gloria.png">
-  <img style="width: 200px; display: flex; align-items: center;"src="assets/gloria.png">
-</div>
-</section>
+
 
 <div style="width: 100%; height: 1px; background-color: black; opacity: 5%;"></div>
 

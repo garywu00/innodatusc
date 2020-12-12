@@ -90,17 +90,15 @@ margin: 10px 0px;
   margin-top: 40px;
 }
 h1 {
-  /* H1 */
-
   font-family: Futura;
   font-style: normal;
-  font-weight: 500;
-  font-size: 78px;
-  line-height: 60px;
-  /* identical to box height, or 108% */
-
+  font-weight: 400;
+  font-size: 70px;
+width: auto;
   letter-spacing: 0.01em;
 
+margin: 0px;
+margin-bottom: 10px;
   /* Text */
 
   color: #292929;
@@ -174,7 +172,6 @@ font-family: 'Josefin Sans', sans-serif;
 font-style: normal;
 font-weight: 500;
 font-size: 36px;
-line-height: 36px;
 /* identical to box height, or 96% */
 color: #FBFAF8;
 }
@@ -193,7 +190,7 @@ color: #FBFAF8;
 #p-white {
 
 /* Body */
-width: 600px;
+width: auto;
 font-family: 'Josefin Sans', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -217,6 +214,25 @@ color: #FFFFFF;
   justify-content: center;
   }
 
+  #section-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background: #1C1818;
+    }
+
+    #section-5 {
+      width: 100%;
+      height: auto;
+      padding-top: 100px;
+      padding-bottom: 100px;
+
+      display: flex;
+      justify-content: center;
+    }
 
 #footer {
   width: 100%;
@@ -338,14 +354,7 @@ a.red:active {
 
 .headshot {
   width: auto;
-  margin: 15px;
-}
-
-.headshot div {
-  width: 200px;
-  display: flex;
-  margin-bottom: -40px;
-  margin-left: -40px;
+  margin: 40px;
 }
 
 .headshot h3 {
@@ -359,6 +368,13 @@ a.red:active {
   font-weight: 400;
   margin-top: -14px;
   font-size: 16px;
+}
+
+.headshot div img{
+  width: 200px;
+  height: auto;
+  display: flex;
+  align-items: center;
 }
         </style>
 
@@ -381,17 +397,96 @@ a.red:active {
 </div><!-- #navbar -->
 </div>
 
-<section id=section-3>
+<section id=section-3 style="margin-top: 64px; justify-content: center; display: flex; width: 100%;">
 
   <div style="width: 80%;">
-  <h1 style="color: #4A4A4A; margin-bottom: 40px;">Our Events</h1>
+  <h1 style="color: #4A4A4A; margin-bottom: 40px; font-weight: 500; font-size: 78px; line-height: 60px;">Our Events</h1>
   <div><img style="width: 100px; "src="assets/Squiggle.png"></div>
-  <div style="padding-top: 20px; color: #4A4A4A; "id=p-white>
+  <div style="padding-top: 20px; color: #4A4A4A; width: 600px;"id=p-white>
 Innovative Design at USC hosts workshops, speaker events, and designathons for students to explore the design and technology industry. Check out our current events here: <a class="red" href="https://lu.ma/innodatusc/" target="_blank"><span>lu.ma/innodatusc</span></a></div>
 
 </section>
 
 <section id=section-4>
+
+<div style="float: left; display: flex; justify-content: center; flex-wrap: wrap; align-items: center; width: 80%;">
+
+    <div style="float: left; height: auto; margin-bottom: 60px; margin-right: 40px; width: 500px;">
+    <div><img style="width: 100px; "src="assets/riptide_logo.png"></div>
+  <h1 style="color: white;">USC Riptide</h1>
+  <div><img style="width: 100px; "src="assets/Squiggle.png"></div>
+  <div style="padding-top: 20px; "id=p-white>
+    Innovative Design at USC hosts workshops, speaker events, and designathons for students to explore the design and technology industry. Check out our current events here: lu.ma/innodatusc
+    <div><a href="https://www.notion.so/USC-Riptide-Summit-2020-e47948365cf14a489a31e302a29e336c" target="_blank"><button class="button" style="vertical-align:middle; color: #FFFFFF; background-color: rgba(12, 23, 23, 0); box-shadow: 0px 0px 0px 3px #FF5662 inset; border-color: #FF5662; margin-top: 20px;"><span>Learn More</span></button></a></div>
+  </div>
+  </div>
+
+<div>
+<img style="border-radius: 5px; width: 500px;"src="assets/riptide.png">
+</div>
+
+</div>
+
+</section>
+
+
+<section id=section-5>
+  <div style="width: 80%; margin-left: auto; margin-right: auto; text-align: center;">
+<h1 style="color: #4A4A4A;">Workshops</h1>
+  <p>Our workshops are hosted by members of Innovative Design at USC.
+</p>
+
+<div style="width: 100%; margin-top: 20px; display: flex; justify-content: center; flex-wrap: wrap; align-items: flex-end; text-align: left;">
+
+  <div class="headshot">
+    <div><img src="assets/icon_design.png"></div>
+    <h3>Workshop Name</h3>
+    <p>Workshop Host</p>
+  </div>
+
+  <div class="headshot">
+    <div><img src="assets/icon_design.png"></div>
+    <h3>Workshop Name</h3>
+    <p>Workshop Host</p>
+  </div>
+
+  <div class="headshot">
+    <div><img src="assets/icon_design.png"></div>
+    <h3>Workshop Name</h3>
+    <p>Workshop Host</p>
+  </div>
+
+  <div class="headshot">
+    <div><img src="assets/icon_design.png"></div>
+    <h3>Workshop Name</h3>
+    <p>Workshop Host</p>
+  </div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id=section-4>
+
+<div style="float: left; display: flex; justify-content: center; flex-wrap: wrap; align-items: center; width: 80%;">
+
+    <div style="float: left; height: auto; margin-bottom: 60px; margin-right: 40px; width: 500px;">
+    <div><img style="width: 100px; "src="assets/createsc_logo.png"></div>
+  <h1 style="color: white;">CreateSC</h1>
+  <div><img style="width: 100px; "src="assets/Squiggle.png"></div>
+  <div style="padding-top: 20px; "id=p-white>
+    Innovative Design at USC hosts workshops, speaker events, and designathons for students to explore the design and technology industry. Check out our current events here: lu.ma/innodatusc
+    <div><a href="https://www.notion.so/USC-Riptide-Summit-2020-e47948365cf14a489a31e302a29e336c" target="_blank"><button class="button" style="vertical-align:middle; color: #FFFFFF; background-color: rgba(12, 23, 23, 0); box-shadow: 0px 0px 0px 3px #FF5662 inset; border-color: #FF5662; margin-top: 20px;"><span>Learn More</span></button></a></div>
+  </div>
+  </div>
+
+<div>
+<img style="border-radius: 5px; width: 500px;"src="assets/createsc.png">
+</div>
+
+</div>
 
 </section>
 
