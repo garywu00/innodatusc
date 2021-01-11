@@ -452,8 +452,8 @@ a.red:active {
 
 @media only screen and (max-width: 1000px) {
     .introEvents{
-        width: 90%; 
-        margin-top: 10px; 
+        width: 80%; 
+        margin-top: 0px; 
         align-items: center; 
         justify-content: flex-start; 
         display: flex;
@@ -488,10 +488,6 @@ a.red:active {
     .createDesc{
         width: 100%;
         margin-bottom: 50px;
-    }
-
-    h1{
-        font-size: 45px;
     }
     
     .riptideDesc{
