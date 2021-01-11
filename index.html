@@ -24,7 +24,7 @@ margin-right: auto;
 padding-left: auto;
 padding-right: auto;
 margin-top: 0px;
-background: linear-gradient(180deg, #FFFDF8 0%, #FEF6F4 100%);
+background: linear-gradient(180deg, #FFFDF8 0%, #FFF6E8 100%);
 }
 
 #logo {
@@ -34,7 +34,7 @@ background: url(Innod at USC Logo-01.png);
 #navbar {
   display: flex;
   align-items: center;
-
+  background-color: #FFF6E8;
   z-index: 2;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -67,7 +67,7 @@ line-height: 36px;
 
 text-align: center;
 
-color: #FFFFFF;
+color: #FFF6E8;
 
 
 /* Inside Auto Layout */
@@ -80,7 +80,8 @@ margin: 10px 0px;
 
 #hero{
   display: flex;
-  // background-image: url("assets/hero_background.png") ; //
+  background-color: #FFF6E8;
+  /* // background-image: url("assets/hero_background.png") ; // */
   width: 100%;
   height: auto;
 }
@@ -195,15 +196,15 @@ width: 100%;
 height: auto;
 padding-top: 100px;
 padding-bottom: 100px;
-padding-left: 0px;
+padding-left: 300px;
 padding-right: 0px;
-background: #1C1818;
+background: #000000;
 margin-left: auto;
 margin-right: auto;
 
 display: flex;
 flex-wrap: wrap;
-justify-content: center;
+/* justify-content: center; */
 }
 
 h2 {
@@ -286,7 +287,7 @@ color: #FFFFFF;
     padding-bottom: 100px;
     padding-left: 0px;
     padding-right: 0px;
-    background: #1C1818;
+    background: #000000;
     margin-left: auto;
     margin-right: auto;
 
@@ -311,7 +312,7 @@ color: #FFFFFF;
   padding-top: 100px;
   padding-bottom: 100px;
 
-  background-color: #FFFFFF;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -329,7 +330,7 @@ color: #FFFFFF;
 .button {
   display: inline-block;
   border-radius: 6px;
-  background-color: #FF5662;
+  background-color: #E73129;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -443,10 +444,10 @@ a.red:active {
 
     <body>
 
-      <div style="display: flex; justify-content: center;">
+      <div style="display: flex; justify-content: center; background-color: #FFF6E8;">
       <div id=navbar>
 
-      <div style="margin-bottom: 10px;"><a href="index.html"><img style="width: 80px; margin-left: -10px;"id=logo src="assets/Innod at USC Logo-01 1.png"></a></div>
+      <div style="margin-bottom: 10px;"><a href="index.html"><img style="width: 60px; margin-left: -10px; margin-top: 20px;"id=logo src="assets/Innod at USC Logo-01 1.svg"></a></div>
 
       <div style="display: flex; margin-left: 20px; margin-right: 20px; justify-content: center; align-items: center;">
       <a class="black" style="padding-bottom: auto; margin-right: 50px; margin-left: 50px;"href="ourteam.html">Our Team</a>
@@ -464,19 +465,24 @@ a.red:active {
 
 <div id=hero-sub>
 
-<h1>Expand Your Creativity</h1>
-<p style="margin-top: -30px; text-align: center;">Innovative Design is USC’s premier creative agency club! We are a community of designers, photographers, and web developers utilizing our skills to support other student organizations and their projects.</p>
+<center>
+  <div style="margin-bottom: 70px;"><img style="align-content: middle;"id=title src="assets/InnoD design through the times.png"></a></div>
+  <p style="margin-top: -30px; text-align: center;">Innovative Design is USC’s premier creative agency club! We are a community of designers, photographers, and web developers utilizing our skills to support other student organizations and their projects.</p>
+</center>
 
 <div id=hero-buttons>
-    <div><a href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank"><button class="button" style="vertical-align:middle; margin-right: 40px;"><span>Join Us</span></button></a></div>
-    <div><a href="https://uscinnovativedesign.typeform.com/to/AFPLN4ym" target="_blank"><button class="button" style="vertical-align:middle; color: #FF5662; background-color: rgba(12, 23, 23, 0); box-shadow: 0px 0px 0px 3px #FF5662 inset; border-color: #FF5662;"><span>Work With Us</span></button></a></div>
+    <div><a href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank"><button class="button" style="vertical-align:middle; margin-right: 40px; background-color: #E73129; color:#FFFFFF"><span>Join Us</span></button></a></div>
+    <div><a href="https://uscinnovativedesign.typeform.com/to/AFPLN4ym" target="_blank"><button class="button" style="vertical-align:middle; color: #FFFFFF; background-color: #172F5B; box-shadow: 0px 0px 0px 3px #172F5B inset; border-color: #172F5B;"><span>Work With Us</span></button></a></div>
 </div>
 
 </div>
 </section>
 
 <section id=section-2>
-<div style="float: left;"> <img style="width: 400px; height: auto; margin-right: 100px; margin-bottom: 40px;"src="assets/graphic.png"> </div>
+<div> <img style="width: 150px; height: auto; margin-right: 5px; margin-top: 260px;"src="assets/Fight On.png"></div>
+<div style="float: left;"> <img style="width: 250px; height: auto; margin-right: 10px; margin-top: 35px;"src="assets/WWD Polaroid.png"> </div>
+<div style="float: left;"> <img style="width: 80px; height: auto; margin-right: 150px; margin-top: 5px;"src="assets/stars.png"></div>
+
 <div style="float: left; height: auto;">
 <h2>What We Do</h2>
 <div><img style="width: 100px; "src="assets/Squiggle.png"></div>
@@ -486,7 +492,7 @@ a.red:active {
   <br>
 We coordinate design workshops, guest speakers, portfolio reviews, and mentorships to compliment the field work members complete with their teams.
 </div>
-<div><a href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank"><button class="button" style="vertical-align:middle; color: #FFFFFF; background-color: rgba(12, 23, 23, 0); box-shadow: 0px 0px 0px 3px #FF5662 inset; border-color: #FF5662; margin-top: 20px;"><span>See Our Work</span></button></a></div>
+<div><a href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank"><button class="button" style="vertical-align:middle; color: #FFFFFF; background-color: #E73129; box-shadow: 0px 0px 0px 3px #E73129 inset; border-color: #E73129; margin-top: 20px;"><span>See Our Work</span></button></a></div>
 </section>
 
 
@@ -510,19 +516,19 @@ No project is too big or too small! We’d love to hear from you. Submit a work 
 <div style="width: auto; margin: 35px;">
   <div style="display: flex; justify-content: center; align-items: center;"><img style="width: 160px; margin-bottom: 20px; padding-left: 20px;"src="assets/icon_photo.png"></div>
   <h3 style="color: #4A4A4A; text-align: center;">Photo</h3>
-  <p style="display: flex; justify-content: center; font-weight: 400">Logos, fliers, branding</p>
+  <p style="display: flex; justify-content: center; font-weight: 400">Fashion, product, portrait</p>
 </div>
 
 <div style="width: auto; margin: 35px;">
   <div style="display: flex; justify-content: center; align-items: center;"><img style="width: 160px; margin-bottom: 20px;"src="assets/icon_web.png"></div>
   <h3 style="color: #4A4A4A; text-align: center;">Web Design</h3>
-  <p style="display: flex; justify-content: center; font-weight: 400">Logos, fliers, branding</p>
+  <p style="display: flex; justify-content: center; font-weight: 400">End-to-end web development</p>
 </div>
 
 </div>
 
   <div style="margin-top: 20px;display: flex; justify-content: center;">
-    <div><a href="https://uscinnovativedesign.typeform.com/to/AFPLN4ym" target="_blank"><button class="button" style="vertical-align:middle; color: #FF5662; background-color: rgba(12, 23, 23, 0); box-shadow: 0px 0px 0px 3px #FF5662 inset; border-color: #FF5662;"><span>Work With Us</span></button></a></div>
+    <div><a href="https://uscinnovativedesign.typeform.com/to/AFPLN4ym" target="_blank"><button class="button" style="vertical-align:middle; color: #FFFFFF; box-shadow: 0px 0px 0px 3px #E73129 inset; border-color: #E73129;"><span>Work With Us</span></button></a></div>
   </div>
 
 </section>
@@ -539,9 +545,9 @@ No project is too big or too small! We’d love to hear from you. Submit a work 
     We also have an executive board that hosts events, outreach, and activities to manage our members! Learn more about our board below!
     <br>
   </div>
-  <div><a href="ourteam.html" target="_blank"><button class="button" style="vertical-align:middle; color: #FFFFFF; background-color: rgba(12, 23, 23, 0); box-shadow: 0px 0px 0px 3px #FF5662 inset; border-color: #FF5662; margin-top: 20px;"><span>Our Team</span></button></a></div>
+  <div><a href="ourteam.html" target="_blank"><button class="button" style="vertical-align:middle; color: #FFFFFF; box-shadow: 0px 0px 0px 3px #E73129 inset; border-color: #E73129; margin-top: 20px;"><span>Our Team</span></button></a></div>
  </div>
-  <img style="width: 600px; height: auto;"src="assets/our_team.png">
+  <img style="width: 600px; height: auto;"src="assets/team.png">
   </div>
 </section>
 
@@ -558,25 +564,32 @@ No project is too big or too small! We’d love to hear from you. Submit a work 
 
 <section id=section-6>
 <div style="width: 600px; margin-left: auto; margin-right: auto; text-align: center;">
-  <h2 style="color: #4A4A4A;">Past Clients</h2>
-  <div><img style="width: 100px; "src="assets/Squiggle.png"></div>
-  <div style="padding-top: 20px;">
-    <p><span><a class="red" href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank">Click here</a></span> to check out our work
+  <h2 style="color: #FFFFFF;">Past Clients</h2>
+  <div style="padding-top: 0px;">
+    <p style="color:#ffffff;"><span><a class="red" href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank">Click here</a></span> to check out our work
   </p>
+  <div><img style="width: 100px; "src="assets/Squiggle.png"></div>
+
 </div>
 </div>
-<div style="display: flex; flex-wrap: wrap; width: 80%; justify-content: center; margin-left: auto; margin-right: auto; align-items: center;">
-  <img style="width: 100px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/aatp.png">
-  <img style="width: 100px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/ala.png">
-  <img style="width: 100px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/amwa.png">
-  <img style="width: 100px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/bthiphop.png">
-  <img style="width: 100px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/kasa.png">
-  <img style="width: 100px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/mbn.png">
-  <img style="width: 100px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/mixedsc.png">
-  <img style="width: 100px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/opmath.png">
-  <img style="width: 100px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/trojanboxing.png">
-  <img style="width: 100px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/trojanshelter.png">
-  <img style="width: 100px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/worldmed.png">
+<div style="display: flex; flex-wrap: wrap; width: 60%; justify-content: center; margin-left: auto; margin-right: auto; align-items: center;">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/op_math.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/trojanshelter.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/boxing.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/aatp.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/mixedsc.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/amwa.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/ala.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/worldmed.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/mbn.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/kasa.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/bt dance.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/spoiled threads.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/microgreen.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/fbs.svg">
+
+
+
 </div>
 </section>
 <div style="width: 100%; height: 1px; background-color: black; opacity: 5%;"></div>
@@ -594,7 +607,7 @@ No project is too big or too small! We’d love to hear from you. Submit a work 
 </div>
 
 <div style="display: flex; align-items: center;">
-  <div style="margin-bottom: 10px; margin-right: 10px;width: auto;"><a href="index.html"><img style="width: 40px; margin-left: -10px;"id=logo src="assets/Innod at USC Logo-01 1.png"></a></div>
+  <div style="margin-bottom: 10px; margin-right: 10px;width: auto;"><a href="index.html"><img style="width: 40px; margin-left: -10px;"id=logo src="assets/Innod at USC Logo-01 1.svg"></a></div>
 <p style="color: #4A4A4A;">Made with love by Innovative Design at USC</p>
 </div>
 </div>
