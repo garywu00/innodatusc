@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/gcd6nkp.css");
 
 body{
     margin-left: auto;
@@ -6,31 +7,15 @@ body{
     padding-right: auto;
     margin-top: 0px;
     background-color: #FFFFFF;
+    font-family: 'halyard-display', sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
     
-#logo {
+/* #logo {
     background: url('Innod at USC Logo-01.png');
-}
+} */
 
-#navbar {
-    display: flex;
-    align-items: center;
-
-    z-index: 2;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 80%;
-    height: 120px;
-
-    font-family: Futura;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 36px;
-
-    color: #4A4A4A;
-}
 
 
 #nav-button {
@@ -71,7 +56,7 @@ body{
 }
 
 h1 {
-    font-family: Futura;
+    font-family: 'Capitol', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 70px;
@@ -86,9 +71,9 @@ h1 {
 }
 
 h4 {
-    font-family: Futura;
+    font-family: 'halyard-display',sans-serif;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 16px;
     line-height: normal;
     width: auto;
@@ -100,7 +85,7 @@ h4 {
 
 p {
     /* Body */
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'halyard-display', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
