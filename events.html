@@ -3,492 +3,141 @@
 
         <title>Innovative Design at USC</title>
 
-<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/site.webmanifest">
-<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> -->
+        <!--adobe fonts-->
+        <link rel=“stylesheet” href=“https://use.typekit.net/gcd6nkp.css” />
 
-<script>document.getElementsByTagName("html")[0].className += " js";</script>
-<link rel="stylesheet" href="assets-top/css/style.css">
-<style>
-
-body{
-margin-left: auto;
-margin-right: auto;
-padding-left: auto;
-padding-right: auto;
-margin-top: 0px;
-background-color: #FFFFFF;
-}
-
-#logo {
-background: url(Innod at USC Logo-01.png);
-}
-
-#navbar {
-  display: flex;
-  align-items: center;
-
-  z-index: 2;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 80%;
-  height: 120px;
-
-  font-family: Futura;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 23px;
-  line-height: 36px;
-
-  color: #4A4A4A;
-}
-
-
-#nav-button {
-  display: flex;
-flex-direction: row;
-align-items: center;
-padding: 15px 30px;
-
-background: linear-gradient(90deg, #FF5662 0%, #FF7E7E 79.06%);
-border-radius: 10px;
-font-family: Futura;
-font-style: normal;
-font-weight: 500;
-font-size: 23px;
-line-height: 36px;
-/* identical to box height, or 157% */
-
-text-align: center;
-
-color: #FFFFFF;
-
-
-/* Inside Auto Layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 10px 0px;
-}
-
-#hero-buttons {
-  display: flex;
-  justify-content: center;
-  height: 80px;
-  width: auto;
-  padding: auto;
-  margin: auto;
-  margin-top: 40px;
-}
-h1 {
-  font-family: Futura;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 70px;
-width: auto;
-  letter-spacing: 0.01em;
-
-margin: 0px;
-margin-bottom: 10px;
-  /* Text */
-
-  color: #292929;
-}
-
-p {
-
-  /* Body */
-  font-family: 'Josefin Sans', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 100%;
-
-  /* Copy */
-
-  color: #4A4A4A;
-}
-#red {
-  display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-width: 240px;
-
-font-family: Futura;
-font-style: normal;
-font-weight: 100;
-font-size: 24px;
-line-height: 30px;
-/* identical to box height, or 157% */
-
-text-align: center;
-
-color: #FFFFFF;
-
-
-background: linear-gradient(90deg, #FF5662 0%, #FF7E7E 79.06%);
-border-radius: 10px;
-}
-
-#red-stroke {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 240px;
-
-  border-radius: 10px;
-  font-family: Futura;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 24px;
-  line-height: 30px;
-  /* identical to box height, or 157% */
-
-  text-align: center;
-
-  color: #FF5662;
-
-
-  background-color: rgba(12, 23, 23, 0);
-  border-color: linear-gradient(90deg, #FF5662 0%, #FF7E7E 79.06%);
-  border-style: solid;
-}
-input, button, submit { border:none; }
-
-h2 {
-font-family: 'Josefin Sans', sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 36px;
-/* identical to box height, or 96% */
-color: #FBFAF8;
-}
-
-h3 {
-font-family: 'Josefin Sans', sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 24px;
-/* identical to box height, or 96% */
-color: #FBFAF8;
-}
-
-
-#p-white {
-
-/* Body */
-width: auto;
-font-family: 'Josefin Sans', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 150%;
-/* or 27px */
-
-color: #FFFFFF;
-}
-
-
-#section-3 {
-  height: auto;
-  width: 100%;
-  padding-top: 0px;
-  padding-bottom: 100px;
-  margin-left: auto;
-  margin-right: auto;
-
-  display: flex;
-  justify-content: center;
-  }
-
-  #section-4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  background: #1C1818;
-    }
-
-    #section-5 {
-      width: 100%;
-      height: auto;
-      padding-top: 100px;
-      padding-bottom: 100px;
-
-      display: flex;
-      justify-content: center;
-    }
-
-#footer {
-  width: 100%;
-  height: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
-
-  display: flex;
-  justify-content: center;
-}
-.button {
-  display: inline-block;
-  border-radius: 6px;
-  background-color: #FF5662;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-family: Futura;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 100%;
-  padding: 15px;
-  width: 230px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 0px;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\203A';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
----
-/* unvisited link */
-a.white:link {
-  color: white;
-  text-decoration: none;
-}
-/* visited link */
-a.white:visited {
-  color: white;
-  text-decoration: none;
-}
-/* mouse over link */
-a.white:hover {
-  color: #FF5662;
-  text-decoration: none;
-}
-/* selected link */
-a.white:active {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-/* unvisited link */
-a.black:link {
-  color: #4A4A4A;
-  text-decoration: none;
-}
-/* visited link */
-a.black:visited {
-  color: #4A4A4A;
-  text-decoration: none;
-}
-/* mouse over link */
-a.black:hover {
-  color: #FF5662;
-  text-decoration: none;
-}
-/* selected link */
-a.black:active {
-  color: #FF5669;
-  text-decoration: none;
-}
-
-/* unvisited link */
-a.red:link {
-  color: #FF5662;
-  text-decoration: none;
-}
-/* visited link */
-a.red:visited {
-  color: #FF5662;
-  text-decoration: none;
-}
-/* mouse over link */
-a.red:hover {
-  color: #B93942;
-  text-decoration: none;
-}
-/* selected link */
-a.red:active {
-  color: #FF5662;
-  text-decoration: none;
-}
-
-
-.headshot {
-  width: auto;
-  margin: 40px;
-}
-
-.headshot h3 {
-  color: #4A4A4A;
-  font-weight: 800;
-  font-size: 20px;
-}
-
-.headshot p {
-  display: flex;
-  font-weight: 400;
-  margin-top: -14px;
-  font-size: 16px;
-}
-
-.headshot div img{
-  width: 200px;
-  height: auto;
-  display: flex;
-  align-items: center;
-}
-        </style>
+        <script>document.getElementsByTagName("html")[0].className += " js";</script>
+        <script src="https://kit.fontawesome.com/494a9d0a74.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="assets-top/css/style.css" />
+        <link rel="stylesheet" href="./events.css" />
+        <link rel="stylesheet" href="./navbar.css">
+        <script src="assets-top/js/nav.js"></script>
 
     </head>
 
-    <body>
+    <body style="background: #FFF6E8;">
 
       <div style="display: flex; justify-content: center;">
-<div id=navbar>
+        <div id="navbar">
 
-  <div style="margin-bottom: 10px;"><a href="index.html"><img style="width: 80px; margin-left: -10px;"id=logo src="assets/Innod at USC Logo-01 1.png"></a></div>
+          <div style="margin-bottom: 10px;"><a href="/"><img style="margin-left: -10px;"id="logo" src="assets/innodLogo.png"></a></div>
+        
+        <ul class="nav">
+          <li class="navOption"><a class="black" href="ourteam.html">Our Team</a></li>
+          <li class="navOption"><a class="black" href="events.html">Events</a></li>
+          <li class="navOption"><a class="black" href="ourwork.html">Our Work</a></li>
+          <li class="navOption"><a href="https://uscinnovativedesign.typeform.com/to/AFPLN4ym" target="_blank"><button id="actionButt" class="button" style="vertical-align:middle;"><span>Submit A Request</span></button></a></li>
+        </ul>
+        
+        <div class="hamburger"><i class="fas fa-bars fa-lg"></i></div>
+        </div><!-- #navbar -->
+      </div>
 
-<div style="display: flex; margin-left: 20px; margin-right: 20px; justify-content: center; align-items: center;">
-  <a class="black" style="padding-bottom: auto; margin-right: 50px; margin-left: 50px;"href="ourteam.html">Our Team</a>
-  <a class="black" style="padding-bottom: auto; margin-right: 50px;"href="events.html">Events</a>
-  <a class="black" style="padding-bottom: auto; margin-right: 50px;"href="ourwork.html">Our Work</a>
-  <div><a href="https://uscinnovativedesign.typeform.com/to/AFPLN4ym" target="_blank"><button class="button" style="vertical-align:middle;"><span>Submit A Request</span></button></a></div>
-</div>
+    <section id=section-3 style="width: 100%;">
 
-</div><!-- #navbar -->
-</div>
+      <div class="introEvents">
+        <div class="introText">
+          <h1>Our Events</h1><!--style="color: #4A4A4A; margin-bottom: 40px; font-weight: 500; font-size: 78px; line-height: 60px;"-->
+          <img style="width: 150px; " src="assets/Squiggle.png">
+          <div class="introPara">
+        Innovative Design at USC hosts workshops, speaker events, and designathons for students to explore the design and technology industry. Check out our current events here: <a class="red" href="https://lu.ma/innodatusc/" target="_blank"><span>lu.ma/innodatusc</span></a></div>
+      
+        </div>
 
-<section id=section-3 style="margin-top: 64px; justify-content: center; display: flex; width: 100%;">
+        <img style="width: 200px" src="./assets/innodRainbow.png" />
+        </div>
 
-  <div style="width: 80%;">
-  <h1 style="color: #4A4A4A; margin-bottom: 40px; font-weight: 500; font-size: 78px; line-height: 60px;">Our Events</h1>
-  <div><img style="width: 100px; "src="assets/Squiggle.png"></div>
-  <div style="padding-top: 20px; color: #4A4A4A; width: 600px;"id=p-white>
-Innovative Design at USC hosts workshops, speaker events, and designathons for students to explore the design and technology industry. Check out our current events here: <a class="red" href="https://lu.ma/innodatusc/" target="_blank"><span>lu.ma/innodatusc</span></a></div>
+        
+    </section>
 
-</section>
+    <section id="riptideSect">
 
-<section id=section-4>
+    <div class="ripTide">
+      <div class="riptideDesc">
+        <img style="width: 100px; "src="assets/riptide_logo.png">
+        <p style="color: #9A9797;">Fall Semester</p>
+        <h1 style="color: white;">Riptide</h1>
+        <img style="width: 150px; "src="assets/Squiggle.png">
+        <div style="padding-top: 20px; "id=p-white>
+          USC Riptide Summit is a joint project between the entrepreneurial and design-focused student organizations
+          at University of Southern California. In an immersive day-long summit, students explore the intersections of 
+          technology and design.
+          <div><a href="https://www.notion.so/USC-Riptide-Summit-2020-e47948365cf14a489a31e302a29e336c" target="_blank"><button class="button" style="vertical-align:middle; color: #FFFFFF; background-color: rgba(12, 23, 23, 0); box-shadow: 0px 0px 0px 3px #FF5662 inset; border-color: #FF5662; margin-top: 20px;"><span>Learn More</span></button></a></div>
+        </div>
+      </div>
 
-<div style="float: left; display: flex; justify-content: center; flex-wrap: wrap; align-items: center; width: 80%;">
+      <img class="riptideImg" src="assets/riptide.png">
+    </div>
 
-    <div style="float: left; height: auto; margin-bottom: 60px; margin-right: 40px; width: 500px;">
-    <div><img style="width: 100px; "src="assets/riptide_logo.png"></div>
-  <h1 style="color: white;">USC Riptide</h1>
-  <div><img style="width: 100px; "src="assets/Squiggle.png"></div>
-  <div style="padding-top: 20px; "id=p-white>
-    Innovative Design at USC hosts workshops, speaker events, and designathons for students to explore the design and technology industry. Check out our current events here: lu.ma/innodatusc
-    <div><a href="https://www.notion.so/USC-Riptide-Summit-2020-e47948365cf14a489a31e302a29e336c" target="_blank"><button class="button" style="vertical-align:middle; color: #FFFFFF; background-color: rgba(12, 23, 23, 0); box-shadow: 0px 0px 0px 3px #FF5662 inset; border-color: #FF5662; margin-top: 20px;"><span>Learn More</span></button></a></div>
-  </div>
-  </div>
-
-<div>
-<img style="border-radius: 5px; width: 500px;"src="assets/riptide.png">
-</div>
-
-</div>
-
-</section>
+    </section>
 
 
 <section id=section-5>
-  <div style="width: 80%; margin-left: auto; margin-right: auto; text-align: center;">
-<h1 style="color: #4A4A4A;">Workshops</h1>
-  <p>Our workshops are hosted by members of Innovative Design at USC.
-</p>
 
-<div style="width: 100%; margin-top: 20px; display: flex; justify-content: center; flex-wrap: wrap; align-items: flex-end; text-align: left;">
+  <div style="width: 80%; text-align: center;">
+  
+    <h1 style="color: #4A4A4A;">Workshops</h1>
+    <p style="color: #9A9797;">Our workshops are hosted by members of Innovative Design at USC.</p>
 
-  <div class="headshot">
-    <div><img src="assets/icon_design.png"></div>
-    <h3>Workshop Name</h3>
-    <p>Workshop Host</p>
+    <div class="workshopFlex">
+
+      <div class="headshot">
+        <img src="assets/workshop1.png">
+        <h3>Intro to Adobe XD</h3>
+        <p>Hosted by Colette Zhou and Josh Lu</p>
+      </div>
+
+      <div class="headshot">
+        <img src="assets/workshop2.png">
+        <h3>Lightroom 101</h3>
+        <p>Hosted by Jack Green and Christy Oh</p>
+      </div>
+
+      <div class="headshot">
+        <img src="assets/workshop3.png">
+        <h3>Design Activism</h3>
+        <p>Hosted by Dane Archer</p>
+      </div>
+
+    </div>
+
   </div>
 
-  <div class="headshot">
-    <div><img src="assets/icon_design.png"></div>
-    <h3>Workshop Name</h3>
-    <p>Workshop Host</p>
+</section>
+
+<section id="createSect">
+
+<div class="createSC">
+  
+  <img class="createImg" src="assets/createsc.png">
+
+  <div class="createDesc">
+    <img style="width: 100px; "src="assets/createsc_logo.png">
+    <p style="color: #9A9797;">Spring Semester</p>
+    <h1 style="color: white;">CreateSC</h1>
+    <img style="width: 150px; "src="assets/Squiggle.png">
+
+    <div style="padding-top: 20px; "id="p-white">
+      CreateSC is a 2-day designathon hosted by USC students. Participants form groups of 2-3 to design
+      a solution to a relevant prompt regarding current social issues. Teams will present their final solution and their research through a deck 
+      to a set of industry judges.
+    </div>
   </div>
-
-  <div class="headshot">
-    <div><img src="assets/icon_design.png"></div>
-    <h3>Workshop Name</h3>
-    <p>Workshop Host</p>
-  </div>
-
-  <div class="headshot">
-    <div><img src="assets/icon_design.png"></div>
-    <h3>Workshop Name</h3>
-    <p>Workshop Host</p>
-  </div>
-
-</div>
-
 </div>
 
 </section>
 
-<section id=section-4>
-
-<div style="float: left; display: flex; justify-content: center; flex-wrap: wrap; align-items: center; width: 80%;">
-
-    <div style="float: left; height: auto; margin-bottom: 60px; margin-right: 40px; width: 500px;">
-    <div><img style="width: 100px; "src="assets/createsc_logo.png"></div>
-  <h1 style="color: white;">CreateSC</h1>
-  <div><img style="width: 100px; "src="assets/Squiggle.png"></div>
-  <div style="padding-top: 20px; "id=p-white>
-    Innovative Design at USC hosts workshops, speaker events, and designathons for students to explore the design and technology industry. Check out our current events here: lu.ma/innodatusc
-    <div><a href="https://www.notion.so/USC-Riptide-Summit-2020-e47948365cf14a489a31e302a29e336c" target="_blank"><button class="button" style="vertical-align:middle; color: #FFFFFF; background-color: rgba(12, 23, 23, 0); box-shadow: 0px 0px 0px 3px #FF5662 inset; border-color: #FF5662; margin-top: 20px;"><span>Learn More</span></button></a></div>
-  </div>
-  </div>
-
-<div>
-<img style="border-radius: 5px; width: 500px;"src="assets/createsc.png">
-</div>
-
-</div>
-
-</section>
 
 <div style="width: 100%; height: 1px; background-color: black; opacity: 5%;"></div>
 
