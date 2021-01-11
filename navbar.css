@@ -1,0 +1,86 @@
+.hamburger{
+    display: none;
+}
+
+
+.nav{
+    /* display: flex; 
+    margin-left: 20px; 
+    margin-right: 20px; 
+    justify-content: space-between; 
+    align-items: center; */
+
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-left: 10px;
+    align-items: center;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+
+    z-index: 2;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    height: 120px;
+
+    font-family: 'halyard-display', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    line-height: 36px;
+
+    color: #4A4A4A;
+}
+.navOption{
+    padding-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px; 
+}
+
+
+
+@media only screen and (max-width: 678px) {
+    /* Style the hamburger menu */
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 30;
+        top: 50;
+    }
+
+    .nav{
+        margin: 0;
+        background: #FFFFFF;
+        display: block;
+        position: fixed;
+        right: -200;
+        top: 100px;
+        width: 50%;
+        height: calc(100vh - 100px);
+        z-index: 100;
+
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+        transition: all 600ms;
+    }
+
+    #actionButt{
+        width: 150px;
+    }
+
+    .navOption{
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .nav-active {
+        right: 0;
+    }
+        
+}
