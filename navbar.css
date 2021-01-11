@@ -60,7 +60,7 @@
         background: #FFFFFF;
         display: block;
         position: fixed;
-        right: -200;
+        right: -500;
         top: 100px;
         width: 50%;
         height: calc(100vh - 100px);
