@@ -49,16 +49,16 @@ margin: 10px 0px;
   margin-top: 40px;
 }
 h1 {
-font-family: 'Capitol', sans-serif;
-font-style: normal;
-font-weight: 400;
-  font-size: 70px;
-width: auto;
-  letter-spacing: 0.01em;
+  font-family: 'Capitol', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+    font-size: 70px;
+  width: auto;
+    letter-spacing: 0.01em;
 
-margin: 0px;
-margin-bottom: 10px;
-  /* Text */
+  margin: 0px;
+  margin-bottom: 5px;
+    /* Text */
 
   color: #292929;
 }
@@ -367,13 +367,6 @@ a.red:active {
   opacity: 80%;
 }
 
-
-#workTitle{
-  color: #4A4A4A; 
-  margin-bottom: 5px; 
-  font-weight: 400; 
-  font-size: 78px;
-}
 
 @media only screen and (max-width: 600px) {
 
