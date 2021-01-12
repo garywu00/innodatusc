@@ -529,9 +529,9 @@ a.red:active {
         }
     }
 
-    @media only screen and (min-width: 730px){
+    @media only screen and (min-width: 700px){
         #createSect {
-            padding-top: 300px;
+            padding-top: 350px;
             padding-bottom: 100px;
     
             background: #1C1818;
