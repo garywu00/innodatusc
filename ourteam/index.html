@@ -3,26 +3,28 @@
 
         <title>Innovative Design at USC</title>
 
-<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/site.webmanifest">
-<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/494a9d0a74.js" crossorigin="anonymous"></script>
 <script>document.getElementsByTagName("html")[0].className += " js";</script>
 <script src="https://kit.fontawesome.com/494a9d0a74.js" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="assets-top/css/style.css">
+<link rel="stylesheet" href="/assets-top/css/style.css">
 
-<link rel="stylesheet" href="./navbar.css">
-<script src="assets-top/js/nav.js"></script>
+<link rel="stylesheet" href="/navbar.css">
+<script src="/assets-top/js/nav.js"></script>
 <style>
 
+@import url("https://use.typekit.net/gcd6nkp.css");
 body{
 margin-left: auto;
 margin-right: auto;
@@ -30,32 +32,14 @@ padding-left: auto;
 padding-right: auto;
 margin-top: 0px;
 background-color: #FFF6E8;
+font-family: 'halyard-display', sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 #logo {
 background: url(logo.svg);
 }
-
-#navbar {
-  display: flex;
-  align-items: center;
-
-  z-index: 2;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 80%;
-  height: 120px;
-
-  font-family: Futura;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 23px;
-  line-height: 36px;
-
-  color: #4A4A4A;
-}
-
 
 #nav-button {
   display: flex;
@@ -65,9 +49,6 @@ padding: 15px 30px;
 
 background: linear-gradient(90deg, #E73129 0%, #E73129 79.06%);
 border-radius: 10px;
-font-family: Futura;
-font-style: normal;
-font-weight: 500;
 font-size: 23px;
 line-height: 36px;
 /* identical to box height, or 157% */
@@ -97,11 +78,10 @@ margin: 10px 0px;
 h1 {
   /* H1 */
 
-  font-family: Futura;
+  font-family: 'Capitol', sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 78px;
-  line-height: 60px;
+  font-weight: 400;
+  font-size: 70px;
   /* identical to box height, or 108% */
 
   letter-spacing: 0.01em;
@@ -114,7 +94,7 @@ h1 {
 p {
 
   /* Body */
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'halyard-display', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -131,9 +111,6 @@ align-items: center;
 justify-content: center;
 width: 240px;
 
-font-family: Futura;
-font-style: normal;
-font-weight: 100;
 font-size: 24px;
 line-height: 30px;
 /* identical to box height, or 157% */
@@ -175,9 +152,9 @@ border-radius: 10px;
 input, button, submit { border:none; }
 
 h2 {
-font-family: 'Josefin Sans', sans-serif;
-font-style: normal;
-font-weight: 500;
+  font-family: 'Capitol', sans-serif;
+  font-style: normal;
+  font-weight: 500;
 font-size: 36px;
 line-height: 36px;
 /* identical to box height, or 96% */
@@ -185,8 +162,6 @@ color: #FBFAF8;
 }
 
 h3 {
-font-family: 'Josefin Sans', sans-serif;
-font-style: normal;
 font-weight: 500;
 font-size: 24px;
 line-height: 24px;
@@ -342,10 +317,9 @@ a.red:active {
 
 
 .headshot {
-  width: auto;
+  width: 200px;
   margin-bottom: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-right: 40px;
   margin-top: 30px;
 }
 
@@ -375,6 +349,57 @@ a.red:active {
   display: flex;
   align-items: center;
 }
+
+.introTeam{
+  width: 80%; 
+  margin: auto; 
+  justify-content: center;
+}
+
+.introText{
+  width: 50%;
+}
+
+
+.headshotCont{
+  width: 100%; 
+  padding-top: 30px; 
+  margin:auto; 
+  display: flex; 
+  justify-content: flex-start; 
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+
+  h1{
+    margin-top: 0;
+  }
+  .introTeam{
+    width: 80%; 
+    margin: auto; 
+    margin-top: 5px;
+
+  }
+  .introText{
+    width: 100%;
+  }
+
+  .headshotCont{
+    width: 100%; 
+    margin:auto; 
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+  .headshot {
+    width: 120px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+}
         </style>
 
     </head>
@@ -385,12 +410,12 @@ a.red:active {
 
         <div id="navbar">
 
-          <div style="margin-bottom: 10px;"><a href="/"><img style="margin-left: -10px;"id="logo" src="assets/innodLogo.png"></a></div>
+          <div style="margin-bottom: 10px;"><a href="/"><img style="margin-left: -10px;"id="logo" src="/assets/innodLogo.png"></a></div>
         
         <ul class="nav">
-          <li class="navOption"><a class="black" href="ourteam.html">Our Team</a></li>
-          <li class="navOption"><a class="black" href="events.html">Events</a></li>
-          <li class="navOption"><a class="black" href="ourwork.html">Our Work</a></li>
+          <li class="navOption"><a class="black" href="/ourteam/">Our Team</a></li>
+          <li class="navOption"><a class="black" href="/events/">Events</a></li>
+          <li class="navOption"><a class="black" href="/ourwork.html">Our Work</a></li>
           <li class="navOption"><a href="https://uscinnovativedesign.typeform.com/to/AFPLN4ym" target="_blank"><button id="actionButt" class="button" style="vertical-align:middle;"><span>Submit A Request</span></button></a></li>
         </ul>
         
@@ -401,116 +426,113 @@ a.red:active {
 
 <section id=section-3>
 
-  <div style="width: 80%; justify-content: left;">
-    <h1 style="color: #4A4A4A; margin-bottom: 40px;">Our Team</h1>
+  <div class="introTeam">
+    <h1 style="margin-bottom: 5px;">Our Team</h1>
     <!-- <img style="margin-left: 250px; margin-top: 100px;" src="assets/hex.svg"></div> -->
-  <div style="padding-top: 20px; color: #4A4A4A; "id=p-white>
+  <div class="introText" style="padding-top: 5px; color: #4A4A4A; ">
 Our club events and operations are led by our board members. Team leads guide a design, photo or web design client throughout the design process.</div>
 
-<!-- <div id=hero-buttons> -->
-  <div><a href="bit.ly/innod-gmsp21" target="_blank"><button class="button" style="vertical-align:middle; margin-right: 40px; margin-top: 20px; background-color: #E73129; color:#FFFFFF"><span>Join Us</span></button></a></div>
-<!-- </div> -->
-
-<div style="width: 60%; margin-top: 20px; margin-left: 25%; display: flex; flex-wrap: wrap; ">
+       <div><a href="https://bit.ly/innod-gmsp21" target="_blank"><button class="button" style="vertical-align:middle; margin-right: 40px; margin-top: 20px; background-color: #E73129; color:#FFFFFF"><span>Join Us</span></button></a></div>
+<div class="headshotCont">
 
 <div class="headshot">
-  <div><img src="assets/team/amari.png"></div>
+  <div><img src="/assets/team/amari.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/angie.png"></div>
+  <div><img src="/assets/team/angie.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/brandon.png"></div>
+  <div><img src="/assets/team/brandon.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/catherine.png"></div>
+  <div><img src="/assets/team/catherine.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/cathy.png"></div>
+  <div><img src="/assets/team/cathy.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/christy.png"></div>
+  <div><img src="/assets/team/christy.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/gloria.png"></div>
+  <div><img src="/assets/team/gloria.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/haley.png"></div>
+  <div><img src="/assets/team/haley.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/janelle.png"></div>
+  <div><img src="/assets/team/janelle.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/yuri.png"></div>
+  <div><img src="/assets/team/yuri.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/sabrina.png"></div>
+  <div><img src="/assets/team/sabrina.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/tricia.png"></div>
+  <div><img src="/assets/team/tricia.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/washington.png"></div>
+  <div><img src="/assets/team/washington.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/jessica.png"></div>
+  <div><img src="/assets/team/jessica.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/josh.png"></div>
+  <div><img src="/assets/team/josh.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/julia.png"></div>
+  <div><img src="/assets/team/julia.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/joon.png"></div>
+  <div><img src="/assets/team/joon.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/kaitlyn.png"></div>
+  <div><img src="/assets/team/kaitlyn.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/rachelle.png"></div>
+  <div><img src="/assets/team/rachelle.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/renata.png"></div>
+  <div><img src="/assets/team/renata.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/emma.png"></div>
+  <div><img src="/assets/team/emma.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/eujue.png"></div>
+  <div><img src="/assets/team/eujue.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/fion.png"></div>
+  <div><img src="/assets/team/fion.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/gary.png"></div>
+  <div><img src="/assets/team/gary.png"></div>
 </div>
 
 <div class="headshot">
-  <div><img src="assets/team/naomi.png"></div>
+  <div><img src="/assets/team/naomi.png"></div>
 </div>
 
 </div>
@@ -522,27 +544,27 @@ Our club events and operations are led by our board members. Team leads guide a 
 
 <div id=footer style="width: 100%;">
   <div style="width: 80%; display: flex; justify-content: center; flex-direction: column;">
-    <p style="color: #D6D6D6;">Contact Us</p>
+    <p style="color: #4A4A4A;">Contact Us</p>
 
     <div style="display: flex; justify-content: flex-start; align-items: center; width: 400px; margin-top: 10px; margin-bottom: 20px;">
-      <a href="https://www.instagram.com/innodatusc/" target="_blank"><img style="width: 30px; margin-right: 40px;"src="assets/Instagram.png">
-      <a href="https://www.behance.net/wipatusc" target="_blank"><img style="width: 40px; margin-right: 40px;"src="assets/Behance.png">
-      <a href="mailto:designatsc@gmail.com" target="_blank"><img style="width: 30px; margin-right: 40px;"src="assets/Email.png">
-        <a href="https://www.facebook.com/innodatusc" target="_blank"><img style="width: 30px; margin-right: 40px;"src="assets/facebook.png">
-          <a href="https://lu.ma/innodatusc" target="_blank"><img style="width: 100px; margin-right: 40px;"src="assets/luma.png">
+      <a href="https://www.instagram.com/innodatusc/" target="_blank"><img style="width: 30px; margin-right: 40px;"src="/assets/Instagram.png">
+      <a href="https://www.behance.net/wipatusc" target="_blank"><img style="width: 40px; margin-right: 40px;"src="/assets/Behance.png">
+      <a href="mailto:designatsc@gmail.com" target="_blank"><img style="width: 30px; margin-right: 40px;"src="/assets/Email.png">
+        <a href="https://www.facebook.com/innodatusc" target="_blank"><img style="width: 30px; margin-right: 40px;"src="/assets/facebook.png">
+          <a href="https://lu.ma/innodatusc" target="_blank"><img style="width: 100px; margin-right: 40px;"src="/assets/luma.png">
     </div>
 
 <div style="display: flex; align-items: center;">
-  <div style="margin-bottom: 10px; margin-right: 10px;width: auto;"><a href="index.html"><img style="width: 40px; margin-left: -10px;"id=logo src="assets/Innod at USC Logo-01 1.png"></a></div>
+  <div style="margin-bottom: 10px; margin-right: 10px;width: auto;"><a href="/"><img style="width: 40px; margin-left: -10px;"id=logo src="/assets/innodLogo.png"></a></div>
 <p style="color: #4A4A4A;">Made with love by Innovative Design at USC</p>
 </div>
 </div>
 
 </div>
 
-<a style="border-radius: 8px; "href="#" class="cd-top text-replace js-cd-top">Top</a>
-<script src="assets-top/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
-<script src="assets-top/js/main.js"></script>
+<a style="border-radius: 8px; background-color:#FF0000;"href="#" class="cd-top text-replace js-cd-top">Top</a>
+<script src="/assets-top/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+<script src="/assets-top/js/main.js"></script>
     </body>
 
 </html>
