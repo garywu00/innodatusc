@@ -47,14 +47,14 @@
 
 /* mouse over link */
 a.black:hover {
-    color: #FF0000 !important;
+    color: #E73129 !important;
     text-decoration: none;
 }
 
 .button {
     display: inline-block;
     border-radius: 6px;
-    background-color: #FF0000 !important;
+    background-color: #E73129 !important;
     border: none;
     color: #FFFFFF;
     font-family: 'halyard-display', sans-serif !important;
