@@ -1,505 +1,609 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Innovative Design @ USC</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./bttn.min.css"/>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="https://use.typekit.net/cth1bxv.css">
-    <script src="scripts.js"></script>
-  </head>
-  <body class="has-tan-background">
-    <section class="has-radius-background hero is-fullheight">
-      <nav class="navbar is-transparent p-4 has-tan-background" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand ml-6 mr-6">
-          <a class="navbar-item" href='./index.html'>
-              <img src="resources/innod-logo.svg">
-          </a>
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-          </div>
-          <div class="navbar-end mr-6">
-            <a class="navbar-item mr-3" href="./about.html">
-              <strong>About Us</strong>
-            </a>
-            <a class="navbar-item mr-3" href="./work.html">
-              <strong>Our Work</strong>
-            </a>
-            <a class="navbar-item mr-3" href="./events.html">
-              <strong>Events</strong>
-            </a>
-            <a class="navbar-item mr-3" href="./services.html">
-              <strong>Services</strong>
-            </a>
-            <a class="navbar-item mr-3" href="./apply.html">
-              <strong>Join Us</strong>
-            </a>
-          </div>
-        </div>
-      </nav>
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <div class="columns">
-            <div class="column is-1"></div>
-            <div class="column is-7">
-              <div class="has-text-left m-6">
-                <h1 class="title hero-text is-size-1-mobile">
-                  Design Through <br/>the Times
-                </h1>
-                <div class="has-text-weight-medium has-text-black">
-                  Innovative Design is USC’s premier creative agency club! We are a community of designers, photographers, and web developers utilizing our skills to support other student organizations and their projects.
-                </div>
-                <div class="is-flex has-text-left mt-6">
-                  <button class="bttn-simple bttn-md has-red-background p-3 pl-6 pr-6">Join Us</button>
-                  <button class="bttn-simple bttn-md has-blue-background p-3 pl-6 pr-6 ml-3 is-hidden-mobile">Work with Us</button>
-                </div>
-              </div>
-            </div>
-            <div class="column is-3 m3-6 is-hidden-mobile">
-              <img class="hero-image" src="resources/innod-logo-hero.svg" width=250>
-            </div>
-            <div class="column is-1"></div>
-          </div>
-        </div>
+    <head>
+
+        <title>Innovative Design at USC</title>
+
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> -->
+<script src="https://kit.fontawesome.com/494a9d0a74.js" crossorigin="anonymous"></script>
+<script>document.getElementsByTagName("html")[0].className += " js";</script>
+<link rel="stylesheet" href="assets-top/css/style.css">
+<link rel="stylesheet" href="./navbar.css">
+<script src="assets-top/js/nav.js"></script>
+<style>
+
+@import url("https://use.typekit.net/gcd6nkp.css");
+
+body{
+margin-left: auto;
+margin-right: auto;
+padding-left: auto;
+padding-right: auto;
+margin-top: 0px;
+background: #FFF6E8;
+font-family: 'halyard-display', sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+#logo {
+background: url(logo.svg);
+}
+
+#nav-button {
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 15px 30px;
+
+background: linear-gradient(90deg, #FF5662 0%, #FF7E7E 79.06%);
+border-radius: 10px;
+font-family: Futura;
+font-style: normal;
+font-weight: 500;
+font-size: 23px;
+line-height: 36px;
+/* identical to box height, or 157% */
+
+text-align: center;
+
+color: #FFF6E8;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 10px 0px;
+}
+
+#hero{
+  display: flex;
+  background-color: #FFF6E8;
+  /* // background-image: url("assets/hero_background.png") ; // */
+  width: 100%;
+  height: auto;
+}
+
+#hero-sub {
+  width: 900px;
+  height: auto;
+  padding-top: auto;
+  padding-bottom: auto;
+  margin: auto;
+
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+#hero-buttons {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  width: auto;
+  padding: auto;
+  margin: auto;
+  margin-top: 40px;
+}
+h1 {
+  /* H1 */
+
+  font-family: 'Capitol', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 78px;
+  line-height: 100px;
+  /* identical to box height, or 108% */
+
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  /* Text */
+
+  color: #292929;
+}
+
+p {
+
+  /* Body */
+  font-family: 'halyard-display', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+
+  /* Copy */
+
+  color: #4A4A4A;
+}
+#red {
+  display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+width: 240px;
+
+font-family: 'halyard-display', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+font-size: 24px;
+line-height: 30px;
+/* identical to box height, or 157% */
+
+text-align: center;
+
+color: #FFFFFF;
+
+
+background: linear-gradient(90deg, #FF5662 0%, #FF7E7E 79.06%);
+border-radius: 10px;
+}
+
+#red-stroke {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 240px;
+
+  border-radius: 10px;
+  font-family: Futura;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 30px;
+  /* identical to box height, or 157% */
+
+  text-align: center;
+
+  color: #FF5662;
+
+
+  background-color: rgba(12, 23, 23, 0);
+  border-color: linear-gradient(90deg, #FF5662 0%, #FF7E7E 79.06%);
+  border-style: solid;
+}
+input, button, submit { border:none; }
+
+#section-2 {
+
+width: 100%;
+height: auto;
+padding-top: 100px;
+padding-bottom: 100px;
+padding-left: 300px;
+padding-right: 0px;
+background: #000000;
+margin-left: auto;
+margin-right: auto;
+
+display: flex;
+flex-wrap: wrap;
+/* justify-content: center; */
+}
+
+h2 {
+  font-family: 'Capitol', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+font-size: 36px;
+line-height: 36px;
+/* identical to box height, or 96% */
+color: #FBFAF8;
+}
+
+h3 {
+font-family: 'halyard-display', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+font-size: 24px;
+line-height: 24px;
+/* identical to box height, or 96% */
+color: #FBFAF8;
+}
+
+
+#p-white {
+
+/* Body */
+width: 400px;
+font-family: 'halyard-display', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+/* or 27px */
+
+color: #FFFFFF;
+}
+
+#see-our-work {
+  align-items: center;
+  padding: 10px 40px;
+
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 157% */
+
+  text-align: center;
+
+  color: #FF5662;
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  background-color: rgba(12, 23, 23, 0);
+  border-color: linear-gradient(90deg, #FF5662 0%, #FF7E7E 79.06%);
+  border-style: solid;
+}
+
+#section-3 {
+  height: auto;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: center;
+  }
+
+  #section-4 {
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: #000000;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+#section-5 {
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  display: flex;
+  justify-content: center;
+}
+
+#section-6 {
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#footer {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  display: flex;
+  justify-content: center;
+}
+.button {
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #FF0000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  line-height: 100%;
+  padding: 15px;
+  width: 230px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\203A';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* unvisited link */
+a.white:link {
+  color: white;
+  text-decoration: none;
+}
+/* visited link */
+a.white:visited {
+  color: white;
+  text-decoration: none;
+}
+/* mouse over link */
+a.white:hover {
+  color: #FF5662;
+  text-decoration: none;
+}
+/* selected link */
+a.white:active {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* unvisited link */
+a.black:link {
+  color: #4A4A4A;
+  text-decoration: none;
+}
+/* visited link */
+a.black:visited {
+  color: #4A4A4A;
+  text-decoration: none;
+}
+/* mouse over link */
+a.black:hover {
+  color: #FF0000;
+  text-decoration: none;
+}
+/* selected link */
+a.black:active {
+  color: #FF5669;
+  text-decoration: none;
+}
+
+/* unvisited link */
+a.red:link {
+  color: #FF5662;
+  text-decoration: none;
+}
+/* visited link */
+a.red:visited {
+  color: #FF5662;
+  text-decoration: none;
+}
+/* mouse over link */
+a.red:hover {
+  color: #B93942;
+  text-decoration: none;
+}
+/* selected link */
+a.red:active {
+  color: #FF5662;
+  text-decoration: none;
+}
+
+
+        </style>
+
+    </head>
+
+    <body>
+
+      <div style="display: flex; justify-content: center;">
+        <div id="navbar">
+
+          <div style="margin-bottom: 10px;"><a href="/"><img style="margin-left: -10px;"id="logo" src="assets/innodLogo.png"></a></div>
+        
+        <ul class="nav">
+          <li class="navOption"><a class="black" href="/ourteam/">Our Team</a></li>
+          <li class="navOption"><a class="black" href="/events/">Events</a></li>
+          <li class="navOption"><a class="black" href="/ourwork.html">Our Work</a></li>
+          <li class="navOption"><a href="https://uscinnovativedesign.typeform.com/to/Ao406WJs" target="_blank"><button id="actionButt" class="button" style="vertical-align:middle;"><span>Submit A Request</span></button></a></li>
+        </ul>
+        
+        <div class="hamburger"><i class="fas fa-bars fa-lg"></i></div>
+        </div><!-- #navbar -->
       </div>
-    </section>
-    <section class="has-background-black-ter has-circle-background hero is-fullheight p-6 is-justify-content-center">
-      <div class="hero-paragraph-text p-6">
-        <div class="columns">
-          <div class="column is-4 has-text-right has-text-left-mobile">
-            <h1 class="title has-text-white has-text-weight-light hero-paragraph-text is-size-4-mobile">
-              we are
-            </h1>
-          </div>
-          <div class="column is-4 has-text-left">
-            <h1 class="title has-red-text hero-paragraph-text is-size-4-mobile has-text-weight-bold">
-              creatives
-            </h1>
-          </div>
-          <div class="column is-4 has-text-right is-hidden-mobile">
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column is-4 has-text-right is-hidden-mobile">
-          </div>
-          <div class="column is-4 has-text-left">
-            <h1 class="title has-red-text hero-paragraph-text has-text-weight-bold is-size-4-mobile">
-              designers
-            </h1>
-          </div>
-          <div class="column is-4 has-text-right is-hidden-mobile">
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column is-4 has-text-right is-hidden-mobile">
-          </div>
-          <div class="column is-4 has-text-left">
-            <h1 class="title has-red-text hero-paragraph-text has-text-weight-bold is-size-4-mobile">
-              photographers
-            </h1>
-          </div>
-          <div class="column is-4 has-text-right is-hidden-mobile">
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column is-4 has-text-right is-hidden-mobile">
-          </div>
-          <div class="column is-4 has-text-left">
-            <h1 class="title has-red-text hero-paragraph-text has-text-weight-bold is-size-4-mobile">
-              developers
-            </h1>
-          </div>
-          <div class="column is-4 has-text-right is-hidden-mobile">
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column is-3 has-text-right is-hidden-mobile">
-          </div>
-          <div class="column is-5 has-text-right">
-            <h1 class="title has-text-white hero-paragraph-text is-italic is-size-4-mobile">
-              creating a <span class="has-text-weight-normal">positive</span>
-            </h1>
-          </div>
-          <div class="column is-4 has-text-right is-hidden-mobile">
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column is-4 has-text-right is-hidden-mobile">
-          </div>
-          <div class="column is-4 has-text-right">
-            <h1 class="title has-text-white outline-text is-size-3-mobile">
-              HUMAN
-            </h1>
-            <!-- <figure class="image">
-              <img src="resources/home/HUMAN.svg" style="width: 300px;" alt="Placeholder image">
-            </figure> -->
-          </div>
-          <div class="column is-4 has-text-right is-hidden-mobile">
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column is-4 has-text-right is-hidden-mobile">
-          </div>
-          <div class="column is-4 has-text-right">
-            <h1 class="title has-text-white hero-paragraph-text has-text-weight-light is-size-4-mobile">
-              experience
-            </h1>
-          </div>
-          <div class="column is-4 has-text-right is-hidden-mobile">
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column is-4 has-text-right is-hidden-mobile">
-          </div>
-          <div class="column is-4 has-text-right">
-            <h1 class="title has-red-text hero-paragraph-text has-text-weight-light is-italic is-size-4-mobile">
-              for you
-            </h1>
-          </div>
-          <div class="column is-4 has-text-right is-hidden-mobile">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="has-black-white-background hero is-fullheight has-text-centered p-6">
-      <div class="">
-        <h1 class="title has-text-white is-size-1">
-          Our Values
-        </h1>
-        <div class="columns">
-          <div class="column is-4 has-text-left">
-            <div class="card m-3">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="resources/community.png" style="object-fit: cover;" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content p-6">
-                <div class="content">
-                  <h2 class="title is-size-3 is-size-4-mobile">
-                    Community
-                  </h2>
-                  <div class="is-size-6">
-                    We value our community and we always put the people first. As a part of our community, you will find yourself being supported in every way.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column is-4 has-text-left">
-            <div class="card m-3">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="resources/education.png" style="object-fit: cover;" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content p-6">
-                <div class="content">
-                  <h1 class="title is-size-3 is-size-4-mobile">
-                    Education
-                  </h1>
-                  <div class="is-size-6">
-                    We believe in providing the educational opportunities for our members to thrive and grow. We are always learning and always improving. 
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column is-4 has-text-left">
-            <div class="card m-3">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="resources/accessibility.png" style="object-fit: cover;" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content p-6">
-                <div class="content">
-                  <h1 class="title is-size-3 is-size-4-mobile">
-                    Accessibility
-                  </h1>
-                  <div class="is-size-6">
-                    We believe that design is for everybody. Our work aims to be highly inclusive and accessible to all demographics.
-                    <br/> <br/> 
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="has-background-white hero is-halfheight pl-6 pr-6">
-      <div class="ml-3 mr-3">
-        <h1 class="title is-size-2 ml-3 mr-3">
-          What We Do
-        </h1>
-        <div class="is-size-5 ml-3 mr-3">
-          Our members spend a semester collaborating in a team on a professional client project. We coordinate design workshops, guest speakers, protfolio reviews, and mentorships to complement the field work members complete with their teams.
-        </div>
-        <div class="is-size-6 ml-3 mr-3">
-          <button class="bttn-simple bttn-md bttn-danger p-3 mt-6 mb-6">See Our Work</button>
-        </div>
-      </div>
-    </section>
-    <section class="has-background-black-ter hero is-fullheight p-6">
-      <div class="m-6">
-        <h1 class="title is-size-2 has-text-white has-text-left">Our Services</h1>
-        <h1 class="mt-3 mb-3 is-size-5 subtitle has-text-white has-text-left">No project is too big or too small! We’d love to hear from you. Submit a work request to learn more about how InnoD can help your project!</h1>
-        <div class="columns">
-          <div class="column is-4 has-text-centered is-flex is-justify-content-center mt-6">
-            <div class="is-flex is-flex-direction-column is-justify-content-center has-text-centered">
-              <figure class="image is-spotlight-height">
-                <img src="resources/design_spotlight.png">
-              </figure>
-              <h1 class="mt-6 title is-size-4 has-text-white">Design</h1>
-              <h1 class="title is-size-6 has-text-white">Graphic logos, fliers, and branding</h1>
-            </div>
-          </div>
-          <div class="column is-4 has-text-centered is-flex is-justify-content-center mt-6">
-            <div class="is-flex is-flex-direction-column is-justify-content-center has-text-centered">
-              <figure class="image is-spotlight-height">
-                <img src="resources/photo_spotlight.png">
-              </figure>
-              <h1 class="mt-6 title is-size-4 has-text-white">Photo</h1>
-              <h1 class="title is-size-6 has-text-white">Fashion, product, and portraits</h1>
-            </div>
-          </div>
-          <div class="column is-4 has-text-centered is-flex is-justify-content-center mt-6">
-            <div class="is-flex is-flex-direction-column is-justify-content-center has-text-centered">
-              <figure class="image is-spotlight-height">
-                <img src="resources/web_spotlight.png">
-              </figure>
-              <h1 class="mt-6 title is-size-4 has-text-white">Web</h1>
-              <h1 class="title is-size-6 has-text-white">End-to-end web development</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="has-background-white hero is-three-quarters-height">
-      <div class="tile is-gapless is-ancestor">
-        <div class="tile has-right-black-border">
-          <article class="tile is-child has-background-white is-flex is-align-items-center is-parent-width">
-            <div class="content p-6">
-              <h1 class="title is-size-1 ml-6 mr-6 is-size-2-mobile">
-                Upcoming <br/>Events
-              </h1>
-              <button class="bttn-simple bttn-md has-red-background p-3 pl-6 pr-6 ml-6">Join Us</button>
-            </div>
-          </article>
-          <div class="has-bottom-black-border"></div>
-        </div>
-        <div class="tile is-vertical is-7">
-          <div class="tile">
-            <div class="tile is-vertical">
-              <article class="tile is-child has-background-white is-flex p-6 has-bottom-black-border">
-                <div class="level is-fullheight is-parent-width p-6">
-                  <!-- Left side -->
-                  <div class="level-left">
-                    <div class="is-flex is-flex-direction-column">
-                      <p class="title">CreateSC</p>                   
-                      <div class="is-flex" >
-                        <p class="subtitle" style="color: red">Apr 24-25</p>
-                        <p class="subtitle ml-6">Designathon</p>
-                      </div>
-                      
-                    </div>
-                  </div>
-                
-                  <!-- Right side -->
-                  <div class="level-right is-hidden-mobile">
-                    <figure class="is-inline-block">
-                      <img style="width: 24px;" src="./resources/home/arrow.svg">
-                    </figure>
-                  </div>
-                </div>
-              </article>
-              <article class="tile is-child has-background-white is-flex p-6">
-                <div class="level is-fullheight is-parent-width p-6">
-                  <!-- Left side -->
-                  <div class="level-left">
-                    <div class="is-flex is-flex-direction-column">
-                      <p class="title">CreateSC</p>
-                      <div class="is-flex" >
-                        <p class="subtitle" style="color: red">Apr 24-25</p>
-                        <p class="subtitle ml-6">Designathon</p>
-                      </div>
-                      
-                    </div>
-                  </div>
-                
-                  <!-- Right side -->
-                  <div class="level-right is-hidden-mobile">
-                    <figure class="is-inline-block">
-                      <img style="width: 24px;" src="./resources/home/arrow.svg">
-                    </figure>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="has-background-black-ter hero is-three-quarters-height has-text-centered p-6">
-      <h1 class="title is-size-2 has-text-white has-text-left m-6">Past Clients</h1>
-      <div class="columns mt-6 is-mobile is-multiline">
-        <div class="column has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="./resources/home/clients/180 degrees consulting.png">
-          </figure>
-        </div>
-        <div class="column has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="./resources/home/clients/bt hip hop.png">
-          </figure>
-        </div>
-        <div class="column has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="./resources/home/clients/mixedsc.png">
-          </figure>
-        </div>
-        <div class="column has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="./resources/home/clients/op_math.png">
-          </figure>
-        </div>
-        <div class="column has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="./resources/home/clients/QSCA.png">
-          </figure>
-        </div>
-      </div>
-      <div class="columns mb-6 is-mobile is-multiline">
-        <div class="column has-text-centered is-1 is-hidden-mobile">
-        </div>
-        <div class="column has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="./resources/home/clients/Share a meal.png">
-          </figure>
-        </div>
-        <div class="column has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="./resources/home/clients/SoCal Vocals.png">
-          </figure>
-        </div>
-        <div class="column has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="./resources/home/clients/trojanshelter.png">
-          </figure>
-        </div>
-        <div class="column has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="./resources/home/clients/worldmed.png">
-          </figure>
-        </div>
-        <div class="column has-text-centered is-1 is-hidden-mobile">
-        </div>
-      </div>
-    </section>
-    <section class="has-background-white hero is-three-quarters-height has-text-centered p-6">
-      <h1 class="title is-size-2 has-text-left m-6 is-size-3-mobile">Where Our Members Have Worked</h1>
-      <div class="columns mt-6 is-multiline is-mobile">
-        <div class="column has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="./resources/home/companies/Adobe.png">
-          </figure>
-        </div>
-        <div class="column has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="./resources/home/companies/amazon.png">
-          </figure>
-        </div>
-        <div class="column has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="./resources/home/companies/Reddit.png">
-          </figure>
-        </div>
-        <div class="column has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="./resources/home/companies/Deloitte.png">
-          </figure>
-        </div>
-        <div class="column has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="./resources/home/companies/Facebook.png">
-          </figure>
-        </div>
-        <div class="column has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="./resources/home/companies/EA.png">
-          </figure>
-        </div>
-      </div>
-      <div class="columns mb-6 is-multiline is-mobile">
-        <div class="column has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="./resources/home/companies/Capital One.png">
-          </figure>
-        </div>
-        <div class="column has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="./resources/home/companies/linkedin.png">
-          </figure>
-        </div>
-        <div class="column has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="./resources/home/companies/Lyft.png">
-          </figure>
-        </div>
-        <div class="column has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="./resources/home/companies/Square.png">
-          </figure>
-        </div>
-        <div class="column has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="./resources/home/companies/fantasy.png">
-          </figure>
-        </div>
-        <div class="column has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img class="is-rounded" src="./resources/home/companies/Apple.png">
-          </figure>
-        </div>
-      </div>
-    </section>
-    <footer class="footer has-background-black p-6">
-      <div class="columns p-6">
-        <div class="column is-8 has-text-white is-flex is-flex-direction-column">
-          <img class="mb-4" src="resources/innovative-design-footer-logo.svg" width="200">
-          <div style="margin-top: auto;">Made with ♥ by Innovative Design at USC</div>
-        </div>
-        <div class="column has-text-white">
-          <div class="mb-4 is-size-5">Students</div>
-          <a target="_blank" class="has-text-white" href="./apply.html"><div class="has-text-weight-light">Apply</div></a>
-          <a target="_blank" class="has-text-white" href="./about.html"><div class="has-text-weight-light">About Us</div></a>
-          <a target="_blank" class="has-text-white" href="./events.html"><div class="has-text-weight-light">Events</div></a>
-        </div>
-        <!-- <div class="column has-text-white">
-          <div class="mb-4 is-size-5">Organizations</div>
-          <div class="has-text-weight-light">Instagram</div>
-          <div class="has-text-weight-light">Facebook</div>
-          <div class="has-text-weight-light">Email</div>
-          <div class="has-text-weight-light">Behance</div>
-        </div> -->
-        <div class="column has-text-white">
-          <div class="mb-4 is-size-5">Contact</div>
-          <a target="_blank" class="has-text-white" href="https://www.instagram.com/innodatusc/"><div class="has-text-weight-light">Instagram</div></a>
-          <a target="_blank" class="has-text-white" href="https://www.facebook.com/innodatusc"><div class="has-text-weight-light">Facebook</div></a>
-          <a target="_blank" class="has-text-white" href="mailto:innodatusc@gmail.com"><div class="has-text-weight-light">Email</div></a>
-          <a target="_blank" class="has-text-white" href="https://www.behance.net/innodatusc"><div class="has-text-weight-light">Behance</div></a>
-        </div>
-      </div>
-    </footer>
-  </body>
+
+
+<section id=hero>
+  <div style="text-align: left; position:absolute; margin: 100px 0px 0px 100px;"><img style= "width: 200px; height: 200px;"src="assets/sticker1.png" width="100" /></div>
+
+<div id=hero-sub>
+
+<center>
+  <div style="margin-bottom: 70px;"><img style="align-content: middle;"id=title src="assets/InnoD design through the times.png"></div>
+  <p style="margin-top: -30px; text-align: center;">Innovative Design is USC’s premier creative agency club! We are a community of designers, photographers, and web developers utilizing our skills to support other student organizations and their projects.</p>
+</center>
+
+<div id=hero-buttons>
+    <div><a href="https://bit.ly/innod-gmsp21" target="_blank"><button class="button" style="vertical-align:middle; margin-right: 40px; background-color: #E73129; color:#FFFFFF"><span>Join Us</span></button></a></div>
+    <div><a href="https://uscinnovativedesign.typeform.com/to/AFPLN4ym" target="_blank"><button class="button" style="vertical-align:middle; color: #FFFFFF; background-color: #172F5B !important; box-shadow: 0px 0px 0px 3px #172F5B inset; border-color: #172F5B;"><span>Work With Us</span></button></a></div>
+</div>
+
+</div>
+<div style="float:right; margin-left: 1450px; margin-top: 60px; position: absolute;"><img style= "width: 150px; height: 150px;"src="assets/sticker2.png" width="100" /></div>
+<div style="float:right; margin-left: 1650px; margin-top: 400px; position: absolute;"><img style= "width: 197px; height: 195px;"src="assets/sticker3.png" width="100" /></div>
+<div style="float:right; margin-left: 1550px; margin-top: 350px; position: absolute;"><img style= "width: 400px; height: 100px;"src="assets/sticker5.png" width="100" /></div>
+
+</section>
+<div style="float:left; margin-left: 150px; margin-top: -100px; position: absolute;"><img style= "width: 190px; height: 192px;"src="assets/sticker4.png" width="100" /></div>
+
+
+<section id=section-2>
+<div> <img style="width: 150px; height: auto; margin-right: 5px; margin-top: 260px;"src="assets/Fight On.png"></div>
+<div style="float: left;"> <img style="width: 250px; height: auto; margin-right: 10px; margin-top: 35px;"src="assets/WWD Polaroid.png"> </div>
+<div style="float: left;"> <img style="width: 80px; height: auto; margin-right: 150px; margin-top: 5px;"src="assets/stars.png"></div>
+
+<div style="float: left; height: auto;">
+<h2>What We Do</h2>
+<div><img style="width: 100px; "src="assets/Squiggle.png"></div>
+<div style="padding-top: 20px; "id=p-white>
+  Our members spend a semester collaborating in a team on a professional client project.
+  <br>
+  <br>
+We coordinate design workshops, guest speakers, portfolio reviews, and mentorships to compliment the field work members complete with their teams.
+</div>
+<div><a href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank"><button class="button" style="vertical-align:middle; color: #FFFFFF; background-color: #E73129; box-shadow: 0px 0px 0px 3px #E73129 inset; border-color: #E73129; margin-top: 20px;"><span>See Our Work</span></button></a></div>
+</section>
+
+
+<section id=section-3>
+
+  <div style="width: 60%;">
+  <h2 style="color: #4A4A4A;">Our Services</h2>
+  <div><img style="width: 100px; "src="assets/Squiggle.png"></div>
+  <div style="padding-top: 20px; color: #4A4A4A; "id=p-white>
+No project is too big or too small! We’d love to hear from you. Submit a work request to learn more about how InnoD can help your project.
+</div>
+
+<div style="width: 100%; margin-top: 20px; display: flex; justify-content: center; flex-wrap: wrap; align-items: flex-end;">
+
+<div style="width: auto; margin: 35px;">
+  <div style="display: flex; justify-content: center; align-items: center;"><img style="width: 130px; margin-bottom: 20px; padding-left: 40px;" src="assets/ICON_design.png"></div>
+  <h3 style="color: #4A4A4A; text-align: center;font-weight:bold;">Graphic Design</h3>
+  <p style="display: flex; justify-content: center; font-weight: 400">Logos, fliers, branding</p>
+</div>
+
+<div style="width: auto; margin: 35px;">
+  <div style="display: flex; justify-content: center; align-items: center;"><img style="width: 160px; margin-bottom: 20px; padding-left: 20px;" src="assets/ICON_photography.png"></div>
+  <h3 style="color: #4A4A4A; text-align: center;font-weight:bold;">Photo</h3>
+  <p style="display: flex; justify-content: center; font-weight: 400">Fashion, product, portrait</p>
+</div>
+
+<div style="width: auto; margin: 35px;">
+  <div style="display: flex; justify-content: center; align-items: center;"><img style="width: 160px; margin-bottom: 20px;" src="assets/ICON_web.png"></div>
+  <h3 style="color: #4A4A4A; text-align: center; font-weight:bold;">Web Design</h3>
+  <p style="display: flex; justify-content: center; font-weight: 400">End-to-end web development</p>
+</div>
+
+</div>
+
+  <div style="margin-top: 20px;display: flex; justify-content: center;">
+    <div><a href="https://uscinnovativedesign.typeform.com/to/AFPLN4ym" target="_blank"><button class="button" style="vertical-align:middle; color: #FFFFFF; box-shadow: 0px 0px 0px 3px #E73129 inset; border-color: #E73129;"><span>Work With Us</span></button></a></div>
+  </div>
+
+</section>
+
+<section id=section-4>
+  <div style="float: left; display: flex; justify-content: center; flex-wrap: wrap; align-items: center; width: 80%;">
+    <div style="float: left; height: auto; margin-right: 40px; margin-bottom: 60px;">
+  <h2>Our Team</h2>
+  <div><img style="width: 100px; "src="assets/Squiggle.png"></div>
+  <div style="padding-top: 20px; "id=p-white>
+    Each team consists of 2 team leads and 4-6 team members that actively work on 2 client projects per term.
+    <br>
+    <br>
+    We also have an executive board that hosts events, outreach, and activities to manage our members! Learn more about our board below!
+    <br>
+  </div>
+  <div><a href="/ourteam" target="_blank"><button class="button" style="vertical-align:middle; color: #FFFFFF; box-shadow: 0px 0px 0px 3px #E73129 inset; border-color: #E73129; margin-top: 20px;"><span>Our Team</span></button></a></div>
+ </div>
+  <img style="width: 600px; height: auto;"src="assets/team.png">
+  </div>
+</section>
+
+<section id=section-5>
+  <div style="width: 600px; margin-left: auto; margin-right: auto; text-align: center;">
+<h2 style="color: #4A4A4A;">Join Us</h2>
+<div><img style="width: 100px; "src="assets/Squiggle.png"></div>
+<div style="padding-top: 20px;">
+  <p>We’re looking for innovative and passionate creatives wanting to contribute to both the USC and greater Los Angeles community.
+</p>
+  <div style="margin-top: 40px;"><a href="https://bit.ly/innod-gmsp21" target="_blank"><button class="button" style="vertical-align:middle;"><span>Join Us</span></button></a></div>
+</div>
+</section>
+
+<section id=section-6>
+<div style="width: 600px; margin-left: auto; margin-right: auto; text-align: center;">
+  <h2 style="color: #FFFFFF;">Past Clients</h2>
+  <div style="padding-top: 0px;">
+    <p style="color:#ffffff;"><span><a class="red" href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5" target="_blank">Click here</a></span> to check out our work
+  </p>
+  <div><img style="width: 100px; "src="assets/Squiggle.png"></div>
+
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; width: 60%; justify-content: center; margin-left: auto; margin-right: auto; align-items: center;">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/op_math.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/trojanshelter.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/boxing.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/aatp.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/mixedsc.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/amwa.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/ala.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/worldmed.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/mbn.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/kasa.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/bt dance.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/spoiled threads.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/microgreen.svg">
+  <img style="width: 120px; display: flex; align-items: center; margin: 20px; "src="assets/pastclients/fbs.svg">
+
+
+
+</div>
+</section>
+<div style="width: 100%; height: 1px; background-color: black; opacity: 5%;"></div>
+
+<div id=footer style="width: 100%;">
+  <div style="width: 80%; display: flex; justify-content: center; flex-direction: column;">
+    <p style="color: #4A4A4A;">Contact Us</p>
+
+<div style="display: flex; justify-content: flex-start; align-items: center; width: 400px; margin-top: 10px; margin-bottom: 20px;">
+  <a href="https://www.instagram.com/innodatusc/" target="_blank"><img style="width: 30px; margin-right: 40px;"src="assets/Instagram.png">
+  <a href="https://www.behance.net/wipatusc" target="_blank"><img style="width: 40px; margin-right: 40px;"src="assets/Behance.png">
+  <a href="mailto:designatsc@gmail.com" target="_blank"><img style="width: 30px; margin-right: 40px;"src="assets/Email.png">
+    <a href="https://www.facebook.com/innodatusc" target="_blank"><img style="width: 30px; margin-right: 40px;"src="assets/facebook.png">
+      <a href="https://lu.ma/innodatusc" target="_blank"><img style="width: 100px; margin-right: 40px;"src="assets/luma.png">
+</div>
+
+<div style="display: flex; align-items: center;">
+  <div style="margin-bottom: 10px; margin-right: 10px;width: auto;"><a href="/"><img style="width: 40px; margin-left: -10px;"id=logo src="assets/innodLogo.png"></a></div>
+<p style="color: #4A4A4A;">Made with love by Innovative Design at USC</p>
+</div>
+</div>
+
+</div>
+
+<a style="border-radius: 8px; background-color:#FF0000;"href="#" class="cd-top text-replace js-cd-top">Top</a>
+<script src="assets-top/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+<script src="assets-top/js/main.js"></script>
+    </body>
+
 </html>
