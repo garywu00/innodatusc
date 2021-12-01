@@ -142,18 +142,3 @@ a.navbar-item:hover {
 .no-mobile-padding-top {
   padding-top: 0px !important;
 }
-
-#temp1{
-  background-color: #F3395D;
-  border-color: #F3395D;
-}
-
-#temp2{
-  background-color: #E5E5E5;
-  color: #F3395D;
-}
-
-#temp3{
-  background-color: #E5E5E5;
-  color: #F3395D;
-} 
