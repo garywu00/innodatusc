@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
 
+
     var btn = document.querySelector('#showModal');
     console.log(btn);
     var modalDlg = document.querySelector('#image-modal');
@@ -30,8 +31,25 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log("clicked")
       modalDlg.classList.add('is-active');
     });
+
     imageModalCloseBtn.addEventListener('click', function(){
       modalDlg.classList.remove('is-active');
     });
   
   });
+
+
+function openTab(evt, tabName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("content-tab");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tab");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" is-active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " is-active";
+}
+
