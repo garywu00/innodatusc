@@ -59,20 +59,20 @@
     <section>
         <div class="tabs is-toggle is-centered">
           <ul>
-            <li class="is-active">
-              <a id="temp1">
+            <li>
+              <a id="gdesign-button" class = "button_pressed" onclick="gdesign()">
                 <span class="icon is-small"><i class="fas fa-pen-fancy" aria-hidden="true"></i></span>
                 <span>Graphic Design</span>
               </a>
             </li>
             <li>
-              <a id="temp2">
+              <a id="wdesign-button" class = "button_unpressed" onclick="wdesign()">
                 <span class="icon is-small"><i class="fas fa-code" aria-hidden="true"></i></span>
                 <span>Web Design</span>
               </a>
             </li>
             <li>
-              <a id="temp3">
+              <a id="photo-button" class = "button_unpressed" onclick="photo()">
                 <span class="icon is-small"><i class="fas fa-camera-retro" aria-hidden="true"></i></span>
                 <span>Photography</span>
               </a>
@@ -82,156 +82,165 @@
     </section>
 
     <section>
-        <div class="container p-6">
-            <div class="p-3">
-                <nav class="level">
-                    <div class="level-left">
-                        <div class="level-item">
-                            <h1 class="title is-size-2 has-text-weight-bold">Design</h1>
+        <div id="gdesign-row" class="category-container">
+            <div class="container p-6">
+                <div class="p-3">
+                    <nav class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <h1 class="title is-size-2 has-text-weight-bold">Design</h1>
+                            </div>
+                        </div>
+                        <div class="level-right">
+                            <a target="_blank" href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5">
+                                <div class="level-item">
+                                    <h1 class="subtitle is-size-4 has-text-danger">See All</h1>
+                                    <figure class="is-inline-block ml-3">
+                                        <img style="width: 24px;" src="./resources/work/seeall_arrow.svg">
+                                    </figure>
+                                </div>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="columns is-centered has-text-centered mb-3">
+                    <div class="column">
+                        <div class="p-3 has-text-left">
+                            <figure class="image">
+                                <img src="./resources/work/design/AMWA.jpg">
+                            </figure>
+                            <h1 class="title is-size-4 has-text-weight-bold mt-5">American Medical Women’s Association (AMWA)</h1>
+                            <p class="subtitle has-text-weight-light mt-5">Illustrated sticker designs for a fundraiser campaign</p>
                         </div>
                     </div>
-                    <div class="level-right">
-                        <a target="_blank" href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5">
-                            <div class="level-item">
-                                <h1 class="subtitle is-size-4 has-text-danger">See All</h1>
-                                <figure class="is-inline-block ml-3">
-                                    <img style="width: 24px;" src="./resources/work/seeall_arrow.svg">
-                                </figure>
-                            </div>
-                        </a>
+                    <div class="column">
+                        <div class="p-3 has-text-left">
+                            <figure class="image">
+                                <img src="./resources/work/design/FBS.jpg">
+                            </figure>
+                            <h1 class="title is-size-4 has-text-weight-bold mt-5">Family Business Society</h1>
+                            <p class="subtitle has-text-weight-light mt-5">Logo design for a professional network of future family business owners</p>
+                        </div>
                     </div>
-                </nav>
-            </div>
-            <div class="columns is-centered has-text-centered mb-3">
-                <div class="column">
-                    <div class="p-3 has-text-left">
-                        <figure class="image">
-                            <img src="./resources/work/design/AMWA.jpg">
-                        </figure>
-                        <h1 class="title is-size-4 has-text-weight-bold mt-5">American Medical Women’s Association (AMWA)</h1>
-                        <p class="subtitle has-text-weight-light mt-5">Illustrated sticker designs for a fundraiser campaign</p>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="p-3 has-text-left">
-                        <figure class="image">
-                            <img src="./resources/work/design/FBS.jpg">
-                        </figure>
-                        <h1 class="title is-size-4 has-text-weight-bold mt-5">Family Business Society</h1>
-                        <p class="subtitle has-text-weight-light mt-5">Logo design for a professional network of future family business owners</p>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="p-3 has-text-left">
-                        <figure class="image">
-                            <img src="./resources/work/design/KASA.jpg">
-                        </figure>
-                        <h1 class="title is-size-4 has-text-weight-bold mt-5">Korean American Student Association (KASA)</h1>
-                        <p class="subtitle has-text-weight-light mt-5">Logo design for Korean-American cultural organization</p>
+                    <div class="column">
+                        <div class="p-3 has-text-left">
+                            <figure class="image">
+                                <img src="./resources/work/design/KASA.jpg">
+                            </figure>
+                            <h1 class="title is-size-4 has-text-weight-bold mt-5">Korean American Student Association (KASA)</h1>
+                            <p class="subtitle has-text-weight-light mt-5">Logo design for Korean-American cultural organization</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container p-6">
-            <div class="p-3">
-                <nav class="level">
-                    <div class="level-left">
-                        <div class="level-item">
-                            <h1 class="title is-size-2 has-text-weight-bold">Photo</h1>
+
+        <div id="photo-row" class="category-container">
+            <div class="container p-6">
+                <div class="p-3">
+                    <nav class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <h1 class="title is-size-2 has-text-weight-bold">Photo</h1>
+                            </div>
+                        </div>
+                        <div class="level-right">
+                            <a target="_blank" href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5">
+                                <div class="level-item">
+                                    <h1 class="subtitle is-size-4 has-text-danger">See All</h1>
+                                    <figure class="is-inline-block ml-3">
+                                        <img style="width: 24px;" src="./resources/work/seeall_arrow.svg">
+                                    </figure>
+                                </div>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="columns is-centered has-text-centered mb-3">
+                    <div class="column">
+                        <div class="p-3 has-text-left">
+                            <figure class="image">
+                                <img src="./resources/work/photo/Metrans.jpg">
+                            </figure>
+                            <h1 class="title is-size-4 has-text-weight-bold mt-5">Metrans Transportation Center</h1>
+                            <p class="subtitle has-text-weight-light mt-5">Photography for the first university transit system in Southern California</p>
                         </div>
                     </div>
-                    <div class="level-right">
-                        <a target="_blank" href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5">
-                            <div class="level-item">
-                                <h1 class="subtitle is-size-4 has-text-danger">See All</h1>
-                                <figure class="is-inline-block ml-3">
-                                    <img style="width: 24px;" src="./resources/work/seeall_arrow.svg">
-                                </figure>
-                            </div>
-                        </a>
+                    <div class="column">
+                        <div class="p-3 has-text-left">
+                            <figure class="image">
+                                <img src="./resources/work/photo/Photo zine.jpg">
+                            </figure>
+                            <h1 class="title is-size-4 has-text-weight-bold mt-5">Photo Zine Spring 2021</h1>
+                            <p class="subtitle has-text-weight-light mt-5">Photography from the spring 2021 Photo Zine event</p>
+                        </div>
                     </div>
-                </nav>
-            </div>
-            <div class="columns is-centered has-text-centered mb-3">
-                <div class="column">
-                    <div class="p-3 has-text-left">
-                        <figure class="image">
-                            <img src="./resources/work/photo/Metrans.jpg">
-                        </figure>
-                        <h1 class="title is-size-4 has-text-weight-bold mt-5">Metrans Transportation Center</h1>
-                        <p class="subtitle has-text-weight-light mt-5">Photography for the first university transit system in Southern California</p>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="p-3 has-text-left">
-                        <figure class="image">
-                            <img src="./resources/work/photo/Photo zine.jpg">
-                        </figure>
-                        <h1 class="title is-size-4 has-text-weight-bold mt-5">Photo Zine Spring 2021</h1>
-                        <p class="subtitle has-text-weight-light mt-5">Photography from the spring 2021 Photo Zine event</p>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="p-3 has-text-left">
-                        <figure class="image">
-                            <img src="./resources/work/photo/FBS.jpg">
-                        </figure>
-                        <h1 class="title is-size-4 has-text-weight-bold mt-5">Photo Zine Fall 2020</h1>
-                        <p class="subtitle has-text-weight-light mt-5">Photography from the fall 2020 Photo Zine event</p>
+                    <div class="column">
+                        <div class="p-3 has-text-left">
+                            <figure class="image">
+                                <img src="./resources/work/photo/FBS.jpg">
+                            </figure>
+                            <h1 class="title is-size-4 has-text-weight-bold mt-5">Photo Zine Fall 2020</h1>
+                            <p class="subtitle has-text-weight-light mt-5">Photography from the fall 2020 Photo Zine event</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container p-6">
-            <div class="p-3">
-                <nav class="level">
-                    <div class="level-left">
-                        <div class="level-item">
-                            <h1 class="title is-size-2 has-text-weight-bold">Web</h1>
+
+        <div id="wdesign-row" class="category-container">
+            <div class="container p-6">
+                <div class="p-3">
+                    <nav class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <h1 class="title is-size-2 has-text-weight-bold">Web</h1>
+                            </div>
+                        </div>
+                        <div class="level-right">
+                            <a target="_blank" href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5">
+                                <div class="level-item">
+                                    <h1 class="subtitle is-size-4 has-text-danger">See All</h1>
+                                    <figure class="is-inline-block ml-3">
+                                        <img style="width: 24px;" src="./resources/work/seeall_arrow.svg">
+                                    </figure>
+                                </div>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="columns is-centered has-text-centered mb-3">
+                    <div class="column">
+                        <div class="p-3 has-text-left">
+                            <figure class="image">
+                                <img src="./resources/work/web/Operation Math.jpg">
+                            </figure>
+                            <h1 class="title is-size-4 has-text-weight-bold mt-5">Operation Math</h1>
+                            <p class="subtitle has-text-weight-light mt-5">Designed the end-to-end experience of a math tutoring service</p>
                         </div>
                     </div>
-                    <div class="level-right">
-                        <a target="_blank" href="https://www.notion.so/innodatusc/Innovative-Design-Client-Work-4bae10de2c4e4072b20999e20711f6c5">
-                            <div class="level-item">
-                                <h1 class="subtitle is-size-4 has-text-danger">See All</h1>
-                                <figure class="is-inline-block ml-3">
-                                    <img style="width: 24px;" src="./resources/work/seeall_arrow.svg">
-                                </figure>
-                            </div>
-                        </a>
+                    <div class="column">
+                        <div class="p-3 has-text-left">
+                            <figure class="image">
+                                <img src="./resources/work/web/USC Worldmed.jpg">
+                            </figure>
+                            <h1 class="title is-size-4 has-text-weight-bold mt-5">Microgreen Guam</h1>
+                            <p class="subtitle has-text-weight-light mt-5">Complete website design for a family-run green house selling microgreens</p>
+                        </div>
                     </div>
-                </nav>
-            </div>
-            <div class="columns is-centered has-text-centered mb-3">
-                <div class="column">
-                    <div class="p-3 has-text-left">
-                        <figure class="image">
-                            <img src="./resources/work/web/Operation Math.jpg">
-                        </figure>
-                        <h1 class="title is-size-4 has-text-weight-bold mt-5">Operation Math</h1>
-                        <p class="subtitle has-text-weight-light mt-5">Designed the end-to-end experience of a math tutoring service</p>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="p-3 has-text-left">
-                        <figure class="image">
-                            <img src="./resources/work/web/USC Worldmed.jpg">
-                        </figure>
-                        <h1 class="title is-size-4 has-text-weight-bold mt-5">Microgreen Guam</h1>
-                        <p class="subtitle has-text-weight-light mt-5">Complete website design for a family-run green house selling microgreens</p>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="p-3 has-text-left">
-                        <figure class="image">
-                            <img src="./resources/work/web/Microgreen Guam.jpg">
-                        </figure>
-                        <h1 class="title is-size-4 has-text-weight-bold mt-5">USC WorldMed @ UPC</h1>
-                        <p class="subtitle has-text-weight-light mt-5">Website deisgn for USC’s Global Health Initiative Organization</p>
+                    <div class="column">
+                        <div class="p-3 has-text-left">
+                            <figure class="image">
+                                <img src="./resources/work/web/Microgreen Guam.jpg">
+                            </figure>
+                            <h1 class="title is-size-4 has-text-weight-bold mt-5">USC WorldMed @ UPC</h1>
+                            <p class="subtitle has-text-weight-light mt-5">Website deisgn for USC’s Global Health Initiative Organization</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
     <footer class="footer has-background-black p-6">
         <div class="columns p-6">
@@ -261,5 +270,8 @@
           </div>
         </div>
       </footer>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="work.js"></script>
   </body>
 </html>
