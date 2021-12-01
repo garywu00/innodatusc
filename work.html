@@ -51,34 +51,33 @@
             <div class="p-3">
                 <h1 class="subtitle has-text-weight-light has-text-grey-light mb-5">Our Work</h1>
                 <h1 class="title is-size-1 has-text-weight-bold is-size-3-mobile">See what we do!</h1>
-                <h1 class="subtitle is-size-4 mt-3">Check out our <span class="has-text-danger">design</span>, <span class="has-text-danger">photography</span>, and <span class="has-text-danger">web</span> work</h1>
+                <div class="tabs is-toggle container">
+                    <div>
+                        <ul>
+                            <li>
+                              <a id="gdesign-button" class = "button_pressed pl-6 pr-6 p-3" onclick="gdesign()">
+                                <span class="icon is-small"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                                <span>Design</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a id="wdesign-button" class = "button_unpressed pl-6 pr-6 p-3" onclick="wdesign()">
+                                <span class="icon is-small"><i class="fa fa-code" aria-hidden="true"></i></span>
+                                <span>Web</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a id="photo-button" class = "button_unpressed pl-6 pr-6 p-3" onclick="photo()">
+                                <span class="icon is-small"><i class="fa fa-camera-retro" aria-hidden="true"></i></span>
+                                <span>Photo</span>
+                              </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
 
-    <section>
-        <div class="tabs is-toggle is-centered">
-          <ul>
-            <li>
-              <a id="gdesign-button" class = "button_pressed" onclick="gdesign()">
-                <span class="icon is-small"><i class="fas fa-pen-fancy" aria-hidden="true"></i></span>
-                <span>Graphic Design</span>
-              </a>
-            </li>
-            <li>
-              <a id="wdesign-button" class = "button_unpressed" onclick="wdesign()">
-                <span class="icon is-small"><i class="fas fa-code" aria-hidden="true"></i></span>
-                <span>Web Design</span>
-              </a>
-            </li>
-            <li>
-              <a id="photo-button" class = "button_unpressed" onclick="photo()">
-                <span class="icon is-small"><i class="fas fa-camera-retro" aria-hidden="true"></i></span>
-                <span>Photography</span>
-              </a>
-            </li>
-          </ul>
-        </div>
     </section>
 
     <section>
@@ -88,7 +87,7 @@
                     <nav class="level">
                         <div class="level-left">
                             <div class="level-item">
-                                <h1 class="title is-size-2 has-text-weight-bold">Graphic Design</h1>
+                                <h1 class="title is-size-2 has-text-weight-bold">Design</h1>
                             </div>
                         </div>
                         <div class="level-right">
@@ -141,7 +140,7 @@
                     <nav class="level">
                         <div class="level-left">
                             <div class="level-item">
-                                <h1 class="title is-size-2 has-text-weight-bold">Photography</h1>
+                                <h1 class="title is-size-2 has-text-weight-bold">Photo</h1>
                             </div>
                         </div>
                         <div class="level-right">
@@ -194,7 +193,7 @@
                     <nav class="level">
                         <div class="level-left">
                             <div class="level-item">
-                                <h1 class="title is-size-2 has-text-weight-bold">Web Design</h1>
+                                <h1 class="title is-size-2 has-text-weight-bold">Web</h1>
                             </div>
                         </div>
                         <div class="level-right">

@@ -146,12 +146,15 @@ a.navbar-item:hover {
 .button_unpressed{
   background-color: #E5E5E5 !important;
   color: #F3395D !important;
+  font-size: 18px;
 }
 
 .button_pressed{
   background-color: #F3395D !important;
   border-color: #F3395D !important;
   color: white !important;
+  font-weight: bold !important;
+  font-size: 18px;
 }
 
 #gdesign-row{
