@@ -21,7 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       });
     }
-    
+
+
     var btn = document.querySelector('#showModal');
     console.log(btn);
     var modalDlg = document.querySelector('#image-modal');
@@ -34,7 +35,9 @@ document.addEventListener('DOMContentLoaded', function () {
     imageModalCloseBtn.addEventListener('click', function(){
       modalDlg.classList.remove('is-active');
     });
+  
   });
+
 
 function openTab(evt, tabName) {
   var i, x, tablinks;
@@ -49,3 +52,4 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " is-active";
 }
+

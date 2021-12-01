@@ -143,6 +143,14 @@ a.navbar-item:hover {
   padding-top: 0px !important;
 }
 
+
+.content.is-vcentered {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center; /* used this for multiple child */
+  align-items: center; /* if an only child */
+}
+
 .button_unpressed{
   background-color: #E5E5E5 !important;
   color: #F3395D !important;
@@ -168,3 +176,4 @@ a.navbar-item:hover {
 #photo-row{
   display: none;
 }
+
