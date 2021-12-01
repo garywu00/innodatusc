@@ -142,3 +142,10 @@ a.navbar-item:hover {
 .no-mobile-padding-top {
   padding-top: 0px !important;
 }
+
+.content.is-vcentered {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center; /* used this for multiple child */
+  align-items: center; /* if an only child */
+}
