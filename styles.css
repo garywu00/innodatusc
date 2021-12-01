@@ -143,17 +143,25 @@ a.navbar-item:hover {
   padding-top: 0px !important;
 }
 
-#temp1{
-  background-color: #F3395D;
-  border-color: #F3395D;
+.button_unpressed{
+  background-color: #E5E5E5 !important;
+  color: #F3395D !important;
 }
 
-#temp2{
-  background-color: #E5E5E5;
-  color: #F3395D;
+.button_pressed{
+  background-color: #F3395D !important;
+  border-color: #F3395D !important;
+  color: white !important;
 }
 
-#temp3{
-  background-color: #E5E5E5;
-  color: #F3395D;
-} 
+#gdesign-row{
+  display: block;
+}
+
+#wdesign-row{
+  display: none;
+}
+
+#photo-row{
+  display: none;
+}
