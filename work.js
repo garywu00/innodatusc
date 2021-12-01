@@ -3,8 +3,6 @@ function gdesign() {
     $( "#wdesign-button" ).removeClass( "button_pressed" ).addClass( "button_unpressed" );
     $( "#photo-button" ).removeClass( "button_pressed" ).addClass( "button_unpressed" );;
 
-    console.log("SHIT");
-
     $("#gdesign-row").css("display","block");
     $("#wdesign-row").css("display","none");
     $("#photo-row").css("display","none");
