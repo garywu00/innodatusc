@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/octoshrimpy/bulma-o-steps/master/bulma-steps.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/aef7737b1c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./bttn.min.css"/>
     <link rel="stylesheet" href="./styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="./favicon/new-favicon-32x32.png">
@@ -54,360 +55,1440 @@
             </div>
         </div>
     </section>
+
+    <!--team pic section -->
     <section>
         <div class="container p-6">
           <div class="p-3">
-            <h1 class="title is-size-3 has-text-weight-bold">Our E-Board</h1>
+            <h1 class="title is-size-3 has-text-weight-bold has-text-centered">Our Team</h1>
           </div>
-          <div class="columns is-centered has-text-centered is-mobile is-multiline">
-              <div class="column is-half-mobile">
-                  <div class="p-3 has-text-left">
-                      <figure class="image ">
-                          <img src="https://ca.slack-edge.com/ENCHN8KSS-W0182R7TF1V-2eda3e3f4346-512">
-                        </figure>
-                        <h1 class="title has-text-weight-bold is-size-4 mt-3">Janelle Hizon</h1>
+          <div class="tabs is-toggle container eboard-button">
+              <div>
+                  <ul>
+                      <li>
+                        <a id="1" class = "button_pressed p-4" onclick="team_toggle(1)">
+                          <span>Eboard</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a id="2" class = "button_unpressed p-4" onclick="team_toggle(2)">
+                          <span>Presidents</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a id="3" class = "button_unpressed p-4" onclick="team_toggle(3)">
+                          <span>Vice Presidents</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a id="4" class = "button_unpressed p-4" onclick="team_toggle(4)">
+                          <span>Team Leads</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a id="5" class = "button_unpressed p-4" onclick="team_toggle(5)">
+                          <span>Marketing Team</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a id="6" class = "button_unpressed p-4" onclick="team_toggle(6)">
+                          <span>Senior Advisors</span>
+                        </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+
+          <div id="container-1">
+            <!--One row-->
+            <div class="columns is-centered has-text-centered is-mobile is-multiline">
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Angela Xuan</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Blue Design Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Angelynn Liu</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Red Design Team Lead, Marketing Team</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Angie Yang</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Marketing Team</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/anna_sun.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Anna Sun</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of External</h1>
+                    </div>
+                </div>
+            </div>
+            <!--End of one row-->
+            <!--One row-->
+            <div class="columns is-centered has-text-centered is-mobile is-multiline">
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/brandon_tam.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Brandon Tam</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Internal, Senior Advisor</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Brian Park</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Photo Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Chloe Ahn</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Internal</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Clara Miller</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Creative Services</h1>
+                    </div>
+                </div>
+            </div>
+            <!--End of one row-->
+            <!--One row-->
+            <div class="columns is-centered has-text-centered is-mobile is-multiline">
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/colette_zhou.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Colette Zhou</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Senior Advisor</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/connie_xu.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Connie Xu</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Gold Web Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Elaine Nguyen</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Cardinal Web Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Erin Jung</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Red Design Team Lead</h1>
+                    </div>
+                </div>
+            </div>
+            <!--End of one row-->
+            <!--One row-->
+            <div class="columns is-centered has-text-centered is-mobile is-multiline">
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/gary_wu.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  Finishing up my blonde era
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://wugary.com" target="_blank">Gary Wu</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Senior Advisor</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/gloria_guo.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Gloria Guo</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Senior Advisor</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/grace_kuo.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  thriving in CS104
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Grace Kuo</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Technology</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/haley_ho.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Haley Ho</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Marketing</h1>
+                    </div>
+                </div>
+            </div>
+            <!--End of one row-->
+            <!--One row-->
+            <div class="columns is-centered has-text-centered is-mobile is-multiline">
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/janelle_hizon.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Janelle Hizon</a>
+                        </h1>
                         <h1 class="subtitle is-size-5">Co-President</h1>
-                  </div>
-              </div>
-              <div class="column is-half-mobile">
-                <div class="p-3 has-text-left">
-                    <figure class="image ">
-                        <img src="https://ca.slack-edge.com/ENCHN8KSS-W018G8PPEPP-45e4ed9e25e2-512">
-                      </figure>
-                      <h1 class="title has-text-weight-bold is-size-4 mt-3">Karla Leung</h1>
-                      <h1 class="subtitle is-size-5">Co-President</h1>
+                    </div>
                 </div>
-              </div>
-              <div class="column is-half-mobile">
-                <div class="p-3 has-text-left">
-                    <figure class="image ">
-                        <img src="https://ca.slack-edge.com/ENCHN8KSS-W018B7K9006-2ae768c14a0a-512">
-                      </figure>
-                      <h1 class="title has-text-weight-bold is-size-4 mt-3">Sophie Park</h1>
-                      <h1 class="subtitle is-size-5">Design Team Lead</h1>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/josh_lu.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Josh Lu</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of External</h1>
+                    </div>
                 </div>
-              </div>
-              <div class="column is-half-mobile">
-                <div class="p-3 has-text-left">
-                    <figure class="image ">
-                        <img src="https://ca.slack-edge.com/ENCHN8KSS-W018Q2KGG92-6794c31cd01e-512">
-                      </figure>
-                      <h1 class="title has-text-weight-bold is-size-4 mt-3">Phoebe Um</h1>
-                      <h1 class="subtitle is-size-5">Design Team Lead</h1>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Joyanna Jiang</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Marketing Team</h1>
+                    </div>
                 </div>
-              </div>
-              <div class="column is-half-mobile">
-                <div class="p-3 has-text-left">
-                    <figure class="image">
-                        <img src="https://ca.slack-edge.com/ENCHN8KSS-W018G59GAGM-be263c76f623-512">
-                      </figure>
-                      <h1 class="title has-text-weight-bold is-size-4 mt-3">Michelle Leung</h1>
-                      <h1 class="subtitle is-size-5">Design Team Lead</h1>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/karla_leung.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Karla Leung</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Co-President</h1>
+                    </div>
                 </div>
-              </div>
+            </div>
+            <!--End of one row-->
+            <!--One row-->
+            <div class="columns is-centered has-text-centered is-mobile is-multiline">
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/kellie_chen.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Kellie Chen</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Membership</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/lesley_moon.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Lesley Moon</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Membership</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/louis_chen.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Louis Chen</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Technology, Photo Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Megan Phi</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Marketing Team</h1>
+                    </div>
+                </div>
+            </div>
+            <!--End of one row-->
+            <!--One row-->
+            <div class="columns is-centered has-text-centered is-mobile is-multiline">
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Michelle Leung</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Blue Design Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/michelle_yi.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  tea > coffee
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Michelle Yi</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Silver Web Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Nikisha Roberts</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Cardinal Web Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/nishant_tripathi.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  Why's it called taking a dump and giving no shits when I give dumps and take no shit.
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://nishantrippy.myportfolio.com" target="_blank">Nishant Tripathi</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Red Design Team Lead</h1>
+                    </div>
+                </div>
+            </div>
+            <!--End of one row-->
+            <!--One row-->
+            <div class="columns is-centered has-text-centered is-mobile is-multiline">
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/phoebe_um.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Phoebe Um</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Marketing Team</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Renata Gergenova</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Marketing</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Ryan Jung</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Yellow Design Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/stella_wong.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  always out & about & on the move
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Stella Wong</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Marketing Team</h1>
+                    </div>
+                </div>
+            </div>
+            <!--End of one row-->
+            <!--One row-->
+            <div class="columns is-centered has-text-centered is-mobile is-multiline">
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  the dog goes meow
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://tanyachen.co" target="_blank">Tanya Chen</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Silver Web Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/will_han.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Will Han</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Yellow Design Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/wilson_setiawan.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  I'm a California king that's why they sleeping on me 
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://wilsonlimsetiawan.com/" target="_blank">Wilson Setiawan</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Gold Web Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile"></div>
+            </div>
+            <!--End of one row-->
           </div>
-          <div class="columns is-centered has-text-centered is-mobile is-multiline">
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image ">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-WNCGAD60K-2d5751d6ff4a-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Colette Zhou</h1>
-                    <h1 class="subtitle is-size-5">Design Team Lead</h1>
-              </div>
+
+          <!-- president section -->
+          <div id="container-2">
+            <!--One row-->
+            <div class="columns is-centered has-text-centered is-mobile is-multiline">
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Janelle Hizon</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Co-President</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Karla Leung</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Co-President</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile"></div>
+                <!--individual picture-->
+                <div class="column is-half-mobile"></div>
             </div>
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image ">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W012L42MAKH-2106641cfa93-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Emma Johnston</h1>
-                    <h1 class="subtitle is-size-5">Design Team Lead</h1>
-              </div>
-            </div>
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image ">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W018G59GAGM-b3fb88baacea-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Clara Miller</h1>
-                    <h1 class="subtitle is-size-5">Design Team Lead</h1>
-              </div>
-            </div>
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W018G59GAGM-6297b4866778-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Aiden Yoo</h1>
-                    <h1 class="subtitle is-size-5">Design Team Lead</h1>
-              </div>
-            </div>
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image ">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W018J7RD99R-60fc2779bb0c-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">William Han</h1>
-                    <h1 class="subtitle is-size-5">Design Team Lead</h1>
-              </div>
-            </div>
+            <!--End of one row-->
           </div>
-          <div class="columns is-centered has-text-centered is-mobile is-multiline">
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image ">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W018GL25LBF-f3b11fc04b6d-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Wilson Ho</h1>
-                    <h1 class="subtitle is-size-5">Web Team Lead</h1>
-              </div>
+
+          <!--Vp section-->
+          <div id="container-3">
+            <!--One row-->
+            <div class="columns is-centered has-text-centered is-mobile is-multiline">
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Anna Sun</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of External</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Brandon Tam</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Internal, Senior Advisor</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Chloe Ahn</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Internal</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Clara Miller</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Creative Services</h1>
+                    </div>
+                </div>
             </div>
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image ">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W018J18TKAP-7153bd1442dc-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Michelle Wang</h1>
-                    <h1 class="subtitle is-size-5">Web Team Lead</h1>
-              </div>
+            <!--End of one row-->
+            <!--One row-->
+            <div class="columns is-centered has-text-centered is-mobile is-multiline">
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Grace Kuo</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Technology</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Haley Ho</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Marketing</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Josh Lu</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of External</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Kellie Chen</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Membership</h1>
+                    </div>
+                </div>
             </div>
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W018G59GAGM-fc3371961bf5-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Callie Bruce</h1>
-                    <h1 class="subtitle is-size-5">Web Team Lead</h1>
-              </div>
+            <!--End of one row-->
+            <!--One row-->
+            <div class="columns is-centered has-text-centered is-mobile is-multiline">
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Lesley Moon</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Membership</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Louis Chen</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Technology, Photo Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Nishant Tripathi</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Creative Services</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Renata Gergenova</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Marketing</h1>
+                    </div>
+                </div>
             </div>
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W018W03SNSV-de7a26ddbe4f-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Connie Xu</h1>
-                    <h1 class="subtitle is-size-5">Web Team Lead</h1>
-              </div>
-            </div>
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image ">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W018HEWBGBC-8fcbf3333873-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Giacomo Green</h1>
-                    <h1 class="subtitle is-size-5">Photo Team Lead</h1>
-              </div>
-            </div>
+            <!--End of one row-->
           </div>
-          <div class="columns is-centered has-text-centered is-mobile is-multiline">
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image ">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W018G59GAGM-7a6d3298376e-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Kellie Chen</h1>
-                    <h1 class="subtitle is-size-5">Photo Team Lead</h1>
-              </div>
+
+          <!--team lead section-->
+          <div id="container-4">
+            <!--One row-->
+            <div class="columns is-centered has-text-centered is-mobile is-multiline">
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Angela Xuan</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Blue Design Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Angelynn Liu</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Red Design Team Lead, Marketing Team</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Brian Park</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Photo Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Connie Xu</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Gold Web Team Lead</h1>
+                    </div>
+                </div>
             </div>
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image ">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W018ANRHP7G-952bf3de856a-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Renata Gergenova</h1>
-                    <h1 class="subtitle is-size-5">VP of Creative Services</h1>
-              </div>
+            <!--End of one row-->
+            <!--One row-->
+            <div class="columns is-centered has-text-centered is-mobile is-multiline">
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Elaine Nguyen</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Cardinal Web Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Erin Jung</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Red Design Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Louis Chen</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Technology, Photo Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Michelle Leung</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Blue Design Team Lead</h1>
+                    </div>
+                </div>
             </div>
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image ">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W0182QQQZPH-b3429e4e46f6-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Jaz Ho</h1>
-                    <h1 class="subtitle is-size-5">VP of Creative Services</h1>
-              </div>
+            <!--End of one row-->
+            <!--One row-->
+            <div class="columns is-centered has-text-centered is-mobile is-multiline">
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Michelle Yi</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Silver Web Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Nikisha Roberts</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Cardinal Web Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Ryan Jung</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Yellow Design Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Tanya Chen</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Silver Web Team Lead</h1>
+                    </div>
+                </div>
             </div>
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image ">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W018G59GAGM-ef9ba2ce3b0f-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Zachary Rudin</h1>
-                    <h1 class="subtitle is-size-5">VP of Internal</h1>
-              </div>
+            <!--End of one row-->
+            <!--One row-->
+            <div class="columns is-centered has-text-centered is-mobile is-multiline">
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Will Han</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Yellow Design Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Wilson Setiawan</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Gold Web Team Lead</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile"></div>
+                <!--individual picture-->
+                <div class="column is-half-mobile"></div>
             </div>
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W0182CD1DEK-961c708866c1-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Anna Sun</h1>
-                    <h1 class="subtitle is-size-5">VP of Internal</h1>
-              </div>
-            </div>
+            <!--End of one row-->
           </div>
-          <div class="columns is-centered has-text-centered is-mobile is-multiline">
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image ">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W0182LQLYCX-6d7eb4a6ef24-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Dane Archer</h1>
-                    <h1 class="subtitle is-size-5">VP of Diversity, Equity and Inclusion</h1>
-              </div>
+
+          <!--Marketing Team-->
+          <div id="container-5">
+            <!--One row-->
+            <div class="columns is-centered has-text-centered is-mobile is-multiline">
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Angelynn Liu</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Red Design Team Lead, Marketing Team</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Angie Yang</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Marketing Team</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Haley Ho</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Marketing</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Joyanna Jiang</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Marketing Team</h1>
+                    </div>
+                </div>
             </div>
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image ">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W018G59GAGM-bc9707095c78-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Naomi Tai</h1>
-                    <h1 class="subtitle is-size-5">VP of Marketing</h1>
-              </div>
+            <!--End of one row-->
+            <!--One row-->
+            <div class="columns is-centered has-text-centered is-mobile is-multiline">
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Megan Phi</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Marketing Team</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Phoebe Um</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Marketing Team</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Renata Gergenova</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Marketing</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Stella Wong</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Marketing Team</h1>
+                    </div>
+                </div>
             </div>
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image ">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W0182PE5PP1-ba52c6621c5e-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Haley Ho</h1>
-                    <h1 class="subtitle is-size-5">VP of Marketing</h1>
-              </div>
-            </div>
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W018G59GAGM-c242b71192d0-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Angie Yang</h1>
-                    <h1 class="subtitle is-size-5">VP of Marketing</h1>
-              </div>
-            </div>
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                <figure class="image ">
-                    <img src="https://ca.slack-edge.com/ENCHN8KSS-W018G59GAGM-13213abad42f-512">
-                  </figure>
-                  <h1 class="title has-text-weight-bold is-size-4 mt-3">Yuri Kawada</h1>
-                  <h1 class="subtitle is-size-5">VP of Marketing</h1>
-              </div>
-            </div>
+            <!--End of one row-->
           </div>
-          <div class="columns is-centered has-text-centered is-mobile is-multiline">
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image ">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W018G59GAGM-a0244c702f30-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Cami Arai</h1>
-                    <h1 class="subtitle is-size-5">VP of Marketing</h1>
-              </div>
+
+          <!--Senior Advisor-->
+          <div id="container-6">
+            <!--One row-->
+            <div class="columns is-centered has-text-centered is-mobile is-multiline">
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Brandon Tam</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">VP of Internal, Senior Advisor</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Colette Zhou</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Senior Advisor</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Gary Wu</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Senior Advisor</h1>
+                    </div>
+                </div>
+                <!--individual picture-->
+                <div class="column is-half-mobile">
+                    <div class="p-3 has-text-centered">
+                        <div class="team-pic-container">
+                          <img src="resources/sp22/Team/no-pic.jpg" class="team-image">
+                          <div class="middle">
+                              <div class="quote">
+                                  
+                              </div>
+                          </div>
+                        </div>
+                        <h1 class="title has-text-weight-bold is-size-4 mt-3">
+                          <a class="port-link" href="https://bit.ly/3IXSn7l" target="_blank">Gloria Guo</a>
+                        </h1>
+                        <h1 class="subtitle is-size-5">Senior Advisor</h1>
+                    </div>
+                </div>
             </div>
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W018G59GAGM-7b49e8dab7c6-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Amari Zhang</h1>
-                    <h1 class="subtitle is-size-5">VP of Membership</h1>
-              </div>
-            </div>
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                <figure class="image ">
-                    <img src="https://ca.slack-edge.com/ENCHN8KSS-W018G59GAGM-a7682eff3c2b-512">
-                  </figure>
-                  <h1 class="title has-text-weight-bold is-size-4 mt-3">Lesley Moon</h1>
-                  <h1 class="subtitle is-size-5">VP of Membership</h1>
-              </div>
-            </div>
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image ">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W018G59GAGM-60802ec3c7b0-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Fion Lam</h1>
-                    <h1 class="subtitle is-size-5">VP of External</h1>
-              </div>
-            </div>
-            <div class="column is-half-mobile">
-              <div class="p-3 has-text-left">
-                  <figure class="image ">
-                      <img src="https://ca.slack-edge.com/ENCHN8KSS-W018G59GAGM-2fb5005f04c6-512">
-                    </figure>
-                    <h1 class="title has-text-weight-bold is-size-4 mt-3">Joshua Lu</h1>
-                    <h1 class="subtitle is-size-5">VP of External</h1>
-              </div>
-            </div>
-        </div>
-        <div class="columns is-centered has-text-centered is-mobile is-multiline">
-          <div class="column is-half-mobile">
-            <div class="p-3 has-text-left">
-                <figure class="image ">
-                    <img src="https://ca.slack-edge.com/ENCHN8KSS-W018G59GAGM-1ae43c0fb381-512">
-                  </figure>
-                  <h1 class="title has-text-weight-bold is-size-4 mt-3">Henry Gu</h1>
-                  <h1 class="subtitle is-size-5">VP of Technology</h1>
-            </div>
+            <!--End of one row-->
           </div>
-          <div class="column is-half-mobile">
-            <div class="p-3 has-text-left">
-                <figure class="image ">
-                    <img src="https://ca.slack-edge.com/ENCHN8KSS-W01834TTQVD-0c673dd15b4d-512">
-                  </figure>
-                  <h1 class="title has-text-weight-bold is-size-4 mt-3">Rachelle Jin</h1>
-                  <h1 class="subtitle is-size-5">Senior Advisor</h1>
-            </div>
-          </div>
-          <div class="column is-half-mobile">
-            <div class="p-3 has-text-left">
-                <figure class="image ">
-                    <img src="https://ca.slack-edge.com/ENCHN8KSS-W018Q72UR3N-c012dfdc8983-512">
-                  </figure>
-                  <h1 class="title has-text-weight-bold is-size-4 mt-3">Trisha Wittenbrink</h1>
-                  <h1 class="subtitle is-size-5">Senior Advisor</h1>
-            </div>
-          </div>
-          <div class="column is-half-mobile">
-            <div class="p-3 has-text-left">
-                <figure class="image ">
-                    <img src="https://ca.slack-edge.com/ENCHN8KSS-WNXHREU87-8af75612a79f-512">
-                  </figure>
-                  <h1 class="title has-text-weight-bold is-size-4 mt-3">Gary Wu</h1>
-                  <h1 class="subtitle is-size-5">Senior Advisor</h1>
-            </div>
-          </div>
-          <div class="column is-half-mobile">
-            <div class="p-3 has-text-left">
-                <figure class="image ">
-                    <img src="https://ca.slack-edge.com/ENCHN8KSS-WP232TEQ7-1df442d4dacf-512">
-                  </figure>
-                  <h1 class="title has-text-weight-bold is-size-4 mt-3">Gloria Guo</h1>
-                  <h1 class="subtitle is-size-5">Senior Advisor</h1>
-            </div>
-          </div>
-        </div>
-        <div class="columns is-centered has-text-centered is-mobile is-multiline">
-          <div class="column is-half-mobile">
-            <div class="p-3 has-text-left">
-                <figure class="image">
-                    <img src="https://ca.slack-edge.com/ENCHN8KSS-W018G59GAGM-2e4190ef1bf0-512">
-                  </figure>
-                  <h1 class="title has-text-weight-bold is-size-4 mt-3">Brandon Tam</h1>
-                  <h1 class="subtitle is-size-5">Senior Advisor</h1>
-            </div>
-          </div>
-          <div class="column is-half-mobile">
-          </div>
-          <div class="column is-half-mobile">
-          </div>
-          <div class="column is-half-mobile">
-          </div>
-          <div class="column is-half-mobile">
-          </div>
-        </div>
+
     </section>
+
     <section class="has-background-black-ter">
       <div class="container p-6">
         <div class="p-3 mt-6 mb-6">
@@ -513,5 +1594,7 @@
       </div>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="about.js"></script>
   </body>
 </html>
